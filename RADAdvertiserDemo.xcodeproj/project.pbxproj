@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		571DA35E24446D6A00B44EE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571DA35D24446D6A00B44EE8 /* GoogleService-Info.plist */; };
 		571DA360244472BE00B44EE8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA35F244472BE00B44EE8 /* Product.swift */; };
 		571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3612444739800B44EE8 /* Collection+Extensions.swift */; };
 		571DA364244477B600B44EE8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA363244477B600B44EE8 /* DataProvider.swift */; };
@@ -21,6 +20,7 @@
 		571DA37B244497A100B44EE8 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */; };
 		571DA37D2444985D00B44EE8 /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */; };
 		571DA3802444A4B100B44EE8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37F2444A4B100B44EE8 /* Button.swift */; };
+		571DA3822445BFFA00B44EE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571DA3812445BFFA00B44EE8 /* GoogleService-Info.plist */; };
 		57436CE4243785820010B7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57436CE3243785820010B7E9 /* AppDelegate.swift */; };
 		57436CEB243785820010B7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
 		57436CED243785840010B7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEC243785840010B7E9 /* Assets.xcassets */; };
@@ -30,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		414E18424A4F274474E0E880 /* Pods_RADAdvertiserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RADAdvertiserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		571DA35D24446D6A00B44EE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		571DA35F244472BE00B44EE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		571DA3612444739800B44EE8 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		571DA363244477B600B44EE8 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		571DA37F2444A4B100B44EE8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		571DA3812445BFFA00B44EE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57436CE0243785820010B7E9 /* RAD Advertiser Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAD Advertiser Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57436CE3243785820010B7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57436CEA243785820010B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 				57436CEC243785840010B7E9 /* Assets.xcassets */,
 				57436CEE243785840010B7E9 /* LaunchScreen.storyboard */,
 				57436CF1243785840010B7E9 /* Info.plist */,
-				571DA35D24446D6A00B44EE8 /* GoogleService-Info.plist */,
+				571DA3812445BFFA00B44EE8 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */,
-				571DA35E24446D6A00B44EE8 /* GoogleService-Info.plist in Resources */,
+				571DA3822445BFFA00B44EE8 /* GoogleService-Info.plist in Resources */,
 				57436CED243785840010B7E9 /* Assets.xcassets in Resources */,
 				57436CEB243785820010B7E9 /* Main.storyboard in Resources */,
 			);

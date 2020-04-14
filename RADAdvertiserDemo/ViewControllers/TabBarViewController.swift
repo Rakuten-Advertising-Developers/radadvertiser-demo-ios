@@ -11,10 +11,34 @@ import RADAttribution
 
 class TabBarViewController: UITabBarController {
     
+    struct AlertInfo {
+        let title: String?
+        let message: String?
+    }
+    
+    private var alertsQueue: [AlertInfo] = []
+    private var alertActive = false
+    
     func showAlert(title: String?, message: String?) {
         
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction.init(title: "Ok", style: .cancel))
+        let alertInfo = AlertInfo(title: title, message: message)
+        alertsQueue.append(alertInfo)
+        
+        showNextAlert()
+    }
+    
+    private func showNextAlert() {
+        
+        guard !alertActive, let alertInfo = alertsQueue.first else { return }
+        
+        alertActive = true
+        alertsQueue.remove(at: 0)
+        
+        let alert = UIAlertController(title: alertInfo.title, message: alertInfo.message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "Ok", style: .cancel, handler: { [weak self] _ in
+            self?.alertActive = false
+            self?.showNextAlert()
+        }))
         present(alert, animated: true)
     }
 }
