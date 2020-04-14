@@ -3,7 +3,7 @@
 platform :ios, '13.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.rakops.com/MobileTracking/Specs.git'
+source 'https://github.com/Rakuten-Advertising-Developers/Specs.git'
 
 target 'RADAdvertiserDemo' do
   
