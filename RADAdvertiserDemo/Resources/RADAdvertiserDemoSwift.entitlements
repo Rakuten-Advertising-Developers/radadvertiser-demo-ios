@@ -4,8 +4,8 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:rakutenready.app.link</string>
-		<string>applinks:rakutenready-alternate.app.link</string>
+		<string>applinks:rakutenadvertising.app.link</string>
+		<string>applinks:rakutenadvertising-alternate.app.link</string>
 	</array>
 </dict>
 </plist>
