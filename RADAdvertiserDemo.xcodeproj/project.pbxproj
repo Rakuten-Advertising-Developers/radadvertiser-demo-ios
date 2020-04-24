@@ -452,7 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
@@ -465,7 +465,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemo;
 				PRODUCT_NAME = "RAD Advertiser Demo";
-				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo Production PP";
+				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo DEV PP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
