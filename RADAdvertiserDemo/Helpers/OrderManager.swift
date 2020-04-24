@@ -49,15 +49,38 @@ extension OrderManager: OrderModifier {
     func add(product: Product) {
         
         products.append(product)
+        
+        let eventData = EventData(transactionId: UUID().uuidString,
+                                  currency: "USD",
+                                  revenue: Double(truncating: product.price as NSNumber),
+                                  shipping: Double.random(in: 10.0 ..< 20.0).percentStyle,
+                                  tax: Double.random(in: 5.0 ..< 15.0).percentStyle,
+                                  coupon: "coupon_text",
+                                  affiliation: "affiliation",
+                                  description: product.name,
+                                  searchQuery: product.name)
 
-        RADAttribution.shared.eventSender.sendEvent(name: "ADD_TO_CART", eventData: nil)
+        RADAttribution.shared.eventSender.sendEvent(name: "ADD_TO_CART", eventData: eventData)
     }
     
     func purchase() {
         
+        let revenue: Decimal = products.reduce(0, { return $0 + $1.price })
+        let description: String = products.map { return $0.name }.joined(separator: ", ")
+        
+        let eventData = EventData(transactionId: UUID().uuidString,
+                                  currency: "USD",
+                                  revenue: Double(truncating: revenue as NSNumber),
+                                  shipping: Double.random(in: 10.0 ..< 20.0).percentStyle,
+                                  tax: Double.random(in: 5.0 ..< 15.0).percentStyle,
+                                  coupon: "coupon_text",
+                                  affiliation: "affiliation",
+                                  description: description,
+                                  searchQuery: description)
+        
         products.removeAll()
         
-        RADAttribution.shared.eventSender.sendEvent(name: "PURCHASE", eventData: nil)
+        RADAttribution.shared.eventSender.sendEvent(name: "PURCHASE", eventData: eventData)
     }
 }
 
@@ -71,5 +94,20 @@ extension OrderManager: OrderDescriber {
     func product(at index: Int) -> Product {
         
         return products[index]
+    }
+}
+
+extension Double {
+    
+    var percentStyle: Double {
+        
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 2
+        
+        guard let stringValue = formatter.string(from: self as NSNumber),
+            let value = Double(stringValue) else {
+            return 0
+        }
+        return value
     }
 }
