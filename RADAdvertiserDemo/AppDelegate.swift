@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         guard let tabBarController = storyboard.instantiateInitialViewController() as? TabBarViewController else { return true }
         
+        RADAttribution.configure(with: launchOptions)
         #if DEBUG
         RADAttribution.shared.logger.enabled = true
         #endif
-        
         RADAttribution.shared.linkResolver.delegate = tabBarController
         RADAttribution.shared.eventSender.delegate = tabBarController
         
