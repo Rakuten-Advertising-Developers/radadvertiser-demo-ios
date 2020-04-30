@@ -2,6 +2,8 @@
 
 platform :ios, '13.0'
 
+inhibit_all_warnings!
+
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Rakuten-Advertising-Developers/Specs.git'
 
@@ -11,7 +13,5 @@ target 'RADAdvertiserDemo' do
   pod 'RADAttribution'
   
   pod 'Firebase/Firestore'
-  # Optionally, include the Swift extensions if you're using Swift.
-  pod 'FirebaseFirestoreSwift'
   
 end

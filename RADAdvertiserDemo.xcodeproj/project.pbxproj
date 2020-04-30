@@ -10,7 +10,6 @@
 		571DA360244472BE00B44EE8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA35F244472BE00B44EE8 /* Product.swift */; };
 		571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3612444739800B44EE8 /* Collection+Extensions.swift */; };
 		571DA364244477B600B44EE8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA363244477B600B44EE8 /* DataProvider.swift */; };
-		571DA36B244482C700B44EE8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36A244482C700B44EE8 /* TabBarViewController.swift */; };
 		571DA36D2444839400B44EE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36C2444839400B44EE8 /* HomeViewController.swift */; };
 		571DA36F244485BF00B44EE8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36E244485BF00B44EE8 /* CartViewController.swift */; };
 		571DA3712444862500B44EE8 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3702444862500B44EE8 /* OrderManager.swift */; };
@@ -25,6 +24,8 @@
 		57436CEB243785820010B7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
 		57436CED243785840010B7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEC243785840010B7E9 /* Assets.xcassets */; };
 		57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEE243785840010B7E9 /* LaunchScreen.storyboard */; };
+		57752F7F245AE86A0022F8B9 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F7E245AE86A0022F8B9 /* SecretConstants.swift */; };
+		57752F81245AF2910022F8B9 /* AttributionSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */; };
 		B816B580D435E3B295312F6E /* Pods_RADAdvertiserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414E18424A4F274474E0E880 /* Pods_RADAdvertiserDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +34,6 @@
 		571DA35F244472BE00B44EE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		571DA3612444739800B44EE8 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		571DA363244477B600B44EE8 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
-		571DA36A244482C700B44EE8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		571DA36C2444839400B44EE8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		571DA36E244485BF00B44EE8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		571DA3702444862500B44EE8 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		57436CEF243785840010B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57436CF1243785840010B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57436CF724378D5F0010B7E9 /* RADAdvertiserDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RADAdvertiserDemoSwift.entitlements; sourceTree = "<group>"; };
+		57752F7E245AE86A0022F8B9 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
+		57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionSDKHandler.swift; sourceTree = "<group>"; };
 		61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +89,6 @@
 		571DA36524447CCF00B44EE8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				571DA36A244482C700B44EE8 /* TabBarViewController.swift */,
 				571DA36C2444839400B44EE8 /* HomeViewController.swift */,
 				571DA3782444935A00B44EE8 /* ProductDetailsViewController.swift */,
 				571DA36E244485BF00B44EE8 /* CartViewController.swift */,
@@ -110,6 +111,8 @@
 			children = (
 				571DA363244477B600B44EE8 /* DataProvider.swift */,
 				571DA3702444862500B44EE8 /* OrderManager.swift */,
+				57752F7E245AE86A0022F8B9 /* SecretConstants.swift */,
+				57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -302,7 +305,8 @@
 				571DA37B244497A100B44EE8 /* UIImageView+Extensions.swift in Sources */,
 				571DA3802444A4B100B44EE8 /* Button.swift in Sources */,
 				571DA36F244485BF00B44EE8 /* CartViewController.swift in Sources */,
-				571DA36B244482C700B44EE8 /* TabBarViewController.swift in Sources */,
+				57752F7F245AE86A0022F8B9 /* SecretConstants.swift in Sources */,
+				57752F81245AF2910022F8B9 /* AttributionSDKHandler.swift in Sources */,
 				571DA37D2444985D00B44EE8 /* NumberFormatter+Extensions.swift in Sources */,
 				571DA3712444862500B44EE8 /* OrderManager.swift in Sources */,
 				571DA36D2444839400B44EE8 /* HomeViewController.swift in Sources */,
@@ -454,7 +458,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -479,7 +483,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

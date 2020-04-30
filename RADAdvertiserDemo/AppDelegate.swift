@@ -19,19 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupFirebase()
         
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        guard let tabBarController = storyboard.instantiateInitialViewController() as? TabBarViewController else { return true }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge],
+                                                                completionHandler: { _, _ in })
+
+        let obfuscator = Obfuscator(with: Bundle.main.bundleIdentifier!)
+        let configuration = Configuration(key: .data(value: obfuscator.revealData(from: SecretConstants().RADAttributionKey)),
+                                          launchOptions: launchOptions)
+        RADAttribution.setup(with: configuration)
         
-        RADAttribution.configure(with: launchOptions)
         #if DEBUG
-        RADAttribution.shared.logger.enabled = true
+            RADAttribution.shared.logger.enabled = true
         #endif
-        RADAttribution.shared.linkResolver.delegate = tabBarController
-        RADAttribution.shared.eventSender.delegate = tabBarController
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tabBarController
-        window?.makeKeyAndVisible()
+        RADAttribution.shared.linkResolver.delegate = AttributionSDKHandler.shared
+        RADAttribution.shared.eventSender.delegate = AttributionSDKHandler.shared
         
         return true
     }
@@ -53,4 +53,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       FirebaseApp.configure()
     }
 }
-
