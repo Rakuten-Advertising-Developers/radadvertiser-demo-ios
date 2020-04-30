@@ -198,8 +198,6 @@ PODS:
     - "gRPC-C++ (= 0.0.9)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 0.3.901)
-  - FirebaseFirestoreSwift (0.2):
-    - FirebaseFirestore (>= 1.6.1, ~> 1.6)
   - GoogleDataTransport (6.0.0)
   - GoogleDataTransportCCTSupport (3.0.0):
     - GoogleDataTransport (~> 6.0)
@@ -247,7 +245,6 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Firestore
-  - FirebaseFirestoreSwift
   - RADAttribution
 
 SPEC REPOS:
@@ -263,7 +260,6 @@ SPEC REPOS:
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
     - FirebaseFirestore
-    - FirebaseFirestoreSwift
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
@@ -291,7 +287,6 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: b59c024493a409f8aecba02c99928d0d8431d159
   FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
   FirebaseFirestore: f5c1798bf8ab3f7ce96adb5f259eed8c698941fd
-  FirebaseFirestoreSwift: 0437bb10d83f8161a9131da1739998254c78fdf5
   GoogleDataTransport: 061fe7d9b476710e3cd8ea51e8e07d8b67c2b420
   GoogleDataTransportCCTSupport: 0f39025e8cf51f168711bd3fb773938d7e62ddb5
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
@@ -306,6 +301,6 @@ SPEC CHECKSUMS:
   RADAttribution: 7667d31c1807fdbf5ff0d59e23610422510141f2
   SwiftJWT: 9a47a71090cae25767078756b5810e3b630aa9a7
 
-PODFILE CHECKSUM: 354e674d3cd8370efd3c4a9c4cc50e734825ac39
+PODFILE CHECKSUM: e70b7ac401a899437bb219e39a51db12b5d76327
 
 COCOAPODS: 1.9.1
