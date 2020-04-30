@@ -22,9 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         guard let tabBarController = storyboard.instantiateInitialViewController() as? TabBarViewController else { return true }
         
-        RADAttribution.configure(with: launchOptions)
+        let obfuscator = Obfuscator(with: Bundle.main.bundleIdentifier!)
+        let configuration = Configuration(key: .data(value: obfuscator.revealData(from: SecretConstants().RADAttributionKey)),
+                                          launchOptions: launchOptions)
+        RADAttribution.setup(with: configuration)
+        
         #if DEBUG
-        RADAttribution.shared.logger.enabled = true
+            RADAttribution.shared.logger.enabled = true
         #endif
         RADAttribution.shared.linkResolver.delegate = tabBarController
         RADAttribution.shared.eventSender.delegate = tabBarController
@@ -53,4 +57,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       FirebaseApp.configure()
     }
 }
-
