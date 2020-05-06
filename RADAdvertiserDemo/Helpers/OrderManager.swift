@@ -59,8 +59,11 @@ extension OrderManager: OrderModifier {
                                   affiliation: "affiliation",
                                   description: product.name,
                                   searchQuery: product.name)
-
-        RADAttribution.shared.eventSender.sendEvent(name: "ADD_TO_CART", eventData: eventData)
+        
+        RADAttribution.shared.eventSender.sendEvent(name: "ADD_TO_CART",
+                                                    eventData: eventData,
+                                                    customData: nil,//["productName": product],
+                                                    customItems: [product])
     }
     
     func purchase() {
@@ -78,9 +81,12 @@ extension OrderManager: OrderModifier {
                                   description: description,
                                   searchQuery: description)
         
-        products.removeAll()
+        RADAttribution.shared.eventSender.sendEvent(name: "PURCHASE",
+                                                    eventData: eventData,
+                                                    customData: nil,//["products": products],
+                                                    customItems: products)
         
-        RADAttribution.shared.eventSender.sendEvent(name: "PURCHASE", eventData: eventData)
+        products.removeAll()
     }
 }
 

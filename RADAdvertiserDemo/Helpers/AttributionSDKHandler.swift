@@ -56,11 +56,11 @@ extension AttributionSDKHandler: EventSenderableDelegate {
 
 extension AttributionSDKHandler: LinkResolvableDelegate {
     
-    func didResolve(link: String, resultMessage: String) {
-        
+    func didResolveLink(response: ResolveLinkResponse) {
+
         showNotification(title: "Resolve link ✅",
-                         subTitle: resultMessage,
-                         body: "link: \(link)")
+                         subTitle: response.sessionId,
+                         body: "link: \(response.data.nonBranchLink)")
     }
     
     func didFailedResolve(link: String, with error: Error) {
