@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RADAttribution
 
 class ProductDetailsViewController: UIViewController {
     
@@ -22,6 +23,15 @@ class ProductDetailsViewController: UIViewController {
         
         configureNavBar()
         updateContent()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let event = Event(name: "VIEW_ITEM",
+                          customData: ["name": product?.name ?? "unknown"])
+        
+        RADAttribution.shared.eventSender.send(event: event)
     }
     
     func configureNavBar() {

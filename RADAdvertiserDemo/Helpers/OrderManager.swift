@@ -60,10 +60,12 @@ extension OrderManager: OrderModifier {
                                   description: product.name,
                                   searchQuery: product.name)
         
-        RADAttribution.shared.eventSender.sendEvent(name: "ADD_TO_CART",
-                                                    eventData: eventData,
-                                                    customData: nil,//["productName": product],
-                                                    customItems: [product])
+        let event = Event(name: "ADD_TO_CART",
+                          eventData: eventData,
+                          customData: ["productName": product.name],
+                          contentItems: [["product": product]])
+        
+        RADAttribution.shared.eventSender.send(event: event)
     }
     
     func purchase() {
@@ -81,10 +83,12 @@ extension OrderManager: OrderModifier {
                                   description: description,
                                   searchQuery: description)
         
-        RADAttribution.shared.eventSender.sendEvent(name: "PURCHASE",
-                                                    eventData: eventData,
-                                                    customData: nil,//["products": products],
-                                                    customItems: products)
+        let event = Event(name: "PURCHASE",
+                          eventData: eventData,
+                          customData: ["totalCount": "\(products.count)"],
+                          contentItems: [["products": products]])
+        
+        RADAttribution.shared.eventSender.send(event: event)
         
         products.removeAll()
     }
@@ -112,7 +116,7 @@ extension Double {
         
         guard let stringValue = formatter.string(from: self as NSNumber),
             let value = Double(stringValue) else {
-            return 0
+                return 0
         }
         return value
     }

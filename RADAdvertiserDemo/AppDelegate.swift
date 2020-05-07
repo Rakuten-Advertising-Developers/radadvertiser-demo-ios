@@ -12,7 +12,7 @@ import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -21,17 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge],
                                                                 completionHandler: { _, _ in })
-
-        let obfuscator = Obfuscator(with: Bundle.main.bundleIdentifier!)
-        let configuration = Configuration(key: .data(value: obfuscator.revealData(from: SecretConstants().RADAttributionKey)),
-                                          launchOptions: launchOptions)
-        RADAttribution.setup(with: configuration)
         
-        #if DEBUG
-            RADAttribution.shared.logger.enabled = true
-        #endif
-        RADAttribution.shared.linkResolver.delegate = AttributionSDKHandler.shared
-        RADAttribution.shared.eventSender.delegate = AttributionSDKHandler.shared
+        setupRADAttribution(with: launchOptions)
         
         return true
     }
@@ -55,7 +46,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupFirebase() {
         
-      FirebaseConfiguration.shared.setLoggerLevel(.min)
-      FirebaseApp.configure()
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
+        FirebaseApp.configure()
+    }
+    
+    func setupRADAttribution(with launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+        
+        let obfuscator = Obfuscator(with: Bundle.main.bundleIdentifier!)
+        let configuration = Configuration(key: .data(value: obfuscator.revealData(from: SecretConstants().RADAttributionKey)),
+                                          launchOptions: launchOptions)
+        RADAttribution.setup(with: configuration)
+        
+        #if DEBUG
+        RADAttribution.shared.logger.enabled = true
+        #endif
+        RADAttribution.shared.linkResolver.delegate = AttributionSDKHandler.shared
+        RADAttribution.shared.eventSender.delegate = AttributionSDKHandler.shared
     }
 }
