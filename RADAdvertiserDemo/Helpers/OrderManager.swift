@@ -60,10 +60,18 @@ extension OrderManager: OrderModifier {
                                   description: product.name,
                                   searchQuery: product.name)
         
+        let customData: EventCustomData = ["Key1": "Value1",
+                                           "Key2": "Value2"]
+        
+        let contentItem: EventContentItem = [.price: product.price,
+                                          .quantity: 1,
+                                          .sku: product.name.sha1,
+                                          .productName: product.name]
+        
         let event = Event(name: "ADD_TO_CART",
                           eventData: eventData,
-                          customData: ["productName": product.name],
-                          contentItems: [["product": product]])
+                          customData: customData,
+                          contentItems: [contentItem])
         
         RADAttribution.shared.eventSender.send(event: event)
     }
@@ -83,13 +91,23 @@ extension OrderManager: OrderModifier {
                                   description: description,
                                   searchQuery: description)
         
+        let customData: EventCustomData = ["Key3": "Value3",
+                                           "Key4": "Value4"]
+        
+        let contentItems: [EventContentItem] = products.compactMap { product in
+            return [.price: product.price,
+                    .quantity: 1,
+                    .sku: product.name.sha1,
+                    .productName: product.name]
+        }
+       
         let event = Event(name: "PURCHASE",
                           eventData: eventData,
-                          customData: ["totalCount": "\(products.count)"],
-                          contentItems: [["products": products]])
+                          customData: customData,
+                          contentItems: contentItems)
         
         RADAttribution.shared.eventSender.send(event: event)
-        
+
         products.removeAll()
     }
 }
