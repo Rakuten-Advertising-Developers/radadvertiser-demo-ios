@@ -14,6 +14,7 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var coordinator: AppCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -23,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                                 completionHandler: { _, _ in })
         
         setupRADAttribution(with: launchOptions)
+        
+        setupUI()
         
         return true
     }
@@ -48,6 +51,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseConfiguration.shared.setLoggerLevel(.min)
         FirebaseApp.configure()
+    }
+    
+    func setupUI() {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        coordinator = AppCoordinator()
+        coordinator?.window = window
+        
+        coordinator?.showFirstVC()
     }
     
     func setupRADAttribution(with launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {

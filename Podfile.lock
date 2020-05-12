@@ -221,11 +221,20 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - Firebase/Auth (6.24.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.5.3)
   - Firebase/CoreOnly (6.24.0):
     - FirebaseCore (= 6.7.0)
   - Firebase/Firestore (6.24.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.13.0)
+  - FirebaseAuth (6.5.3):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseAuthInterop (1.1.0)
   - FirebaseCore (6.7.0):
     - FirebaseCoreDiagnostics (~> 1.3)
@@ -256,10 +265,21 @@ PODS:
   - GoogleDataTransportCCTSupport (3.1.0):
     - GoogleDataTransport (~> 6.1)
     - nanopb (~> 1.30905.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
   - GoogleUtilities/Environment (6.6.0):
     - PromisesObjC (~> 1.2)
   - GoogleUtilities/Logger (6.6.0):
     - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.6.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.6.0)"
+  - GoogleUtilities/Reachability (6.6.0):
+    - GoogleUtilities/Logger
   - "gRPC-C++ (1.28.0)":
     - "gRPC-C++/Implementation (= 1.28.0)"
     - "gRPC-C++/Interface (= 1.28.0)"
@@ -284,6 +304,7 @@ PODS:
     - BoringSSL-GRPC (= 0.0.7)
     - gRPC-Core/Interface (= 1.28.0)
   - gRPC-Core/Interface (1.28.0)
+  - GTMSessionFetcher/Core (1.4.0)
   - KituraContracts (1.2.1):
     - LoggerAPI (~> 1.7)
   - leveldb-library (1.22)
@@ -306,6 +327,7 @@ PODS:
     - LoggerAPI (~> 1.7)
 
 DEPENDENCIES:
+  - Firebase/Auth
   - Firebase/Firestore
   - RADAttribution
 
@@ -317,6 +339,7 @@ SPEC REPOS:
     - BlueRSA
     - BoringSSL-GRPC
     - Firebase
+    - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseCoreDiagnostics
@@ -327,6 +350,7 @@ SPEC REPOS:
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
+    - GTMSessionFetcher
     - KituraContracts
     - leveldb-library
     - LoggerAPI
@@ -344,6 +368,7 @@ SPEC CHECKSUMS:
   BlueRSA: 6f9776d62d9773502415a7db3bcbb2bbb3f71fc3
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Firebase: b28e55c60efd98963cd9011fe2fac5a10c2ba124
+  FirebaseAuth: 7047aec89c0b17ecd924a550c853f0c27ac6015e
   FirebaseAuthInterop: a0f37ae05833af156e72028f648d313f7e7592e9
   FirebaseCore: e610482f64097b0e9f056cd97bc6b33dfabcbb6a
   FirebaseCoreDiagnostics: 4a773a47bd83bbd5a9b1ccf1ce7caa8b2d535e67
@@ -354,6 +379,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   "gRPC-C++": 2ea13a2e14f0b89991a0b4b0151e7c6a56319516
   gRPC-Core: 325ba201411619a7302c621a1c8ee787719d4b9b
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   KituraContracts: e845e60dc8627ad0a76fa55ef20a45451d8f830b
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   LoggerAPI: fb78461eedac5316b290f2404d88b9d614d96c57
@@ -363,6 +389,6 @@ SPEC CHECKSUMS:
   RADAttribution: e2bb723464d46b5c20383c0b148b1e5b0364fada
   SwiftJWT: 9a47a71090cae25767078756b5810e3b630aa9a7
 
-PODFILE CHECKSUM: e70b7ac401a899437bb219e39a51db12b5d76327
+PODFILE CHECKSUM: 49af45aa0069d8efc22383e71757135887a4fa1b
 
 COCOAPODS: 1.9.1

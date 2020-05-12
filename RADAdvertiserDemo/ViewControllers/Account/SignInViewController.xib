@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="RAD_Advertiser_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="dhh-Zr-COH" id="cNB-7J-HNb"/>
+                <outlet property="emailTextField" destination="dSV-W9-52a" id="E1k-1r-H6V"/>
+                <outlet property="passwordTextField" destination="PMD-Bx-dDe" id="bth-0O-4FZ"/>
+                <outlet property="segmentControl" destination="gDO-iW-a7d" id="pxE-W0-wLw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3EW-gX-vRK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VE5-cT-9GF">
+                    <rect key="frame" x="41.5" y="94" width="331" height="223"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-iW-a7d">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="32"/>
+                            <segments>
+                                <segment title="Sign In"/>
+                                <segment title="Sign Up"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentControlValueChanged:" destination="-1" eventType="valueChanged" id="dmo-Al-jIG"/>
+                            </connections>
+                        </segmentedControl>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSV-W9-52a">
+                            <rect key="frame" x="0.0" y="61" width="331" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PMD-Bx-dDe">
+                            <rect key="frame" x="0.0" y="125" width="331" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhh-Zr-COH" customClass="Button" customModule="RAD_Advertiser_Demo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="189" width="331" height="34"/>
+                            <state key="normal" title="Sign In"/>
+                            <connections>
+                                <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="Ya0-z0-7C5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="VE5-cT-9GF" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="JEf-ea-Qtr"/>
+                <constraint firstItem="VE5-cT-9GF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="Jg0-SJ-wQm"/>
+                <constraint firstItem="VE5-cT-9GF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="NBR-7d-xRp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="127"/>
+        </view>
+    </objects>
+</document>
