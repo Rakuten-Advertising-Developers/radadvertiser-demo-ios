@@ -13,5 +13,6 @@ target 'RADAdvertiserDemo' do
   pod 'RADAttribution'
   
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
   
 end

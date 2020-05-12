@@ -253,6 +253,7 @@
         <scene sceneID="CdR-Fi-Za9">
             <objects>
                 <tabBarController id="y8m-i4-lNZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lZG-v5-3PE"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nHq-HY-E9N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -261,6 +262,7 @@
                     <connections>
                         <segue destination="SjN-Pl-pGg" kind="relationship" relationship="viewControllers" id="hFj-e8-tFa"/>
                         <segue destination="hhQ-l4-4Au" kind="relationship" relationship="viewControllers" id="yS3-P0-f3B"/>
+                        <segue destination="OvN-CN-AF6" kind="relationship" relationship="viewControllers" id="M6d-FJ-6Rs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0F-aX-wPQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -305,9 +307,43 @@
             </objects>
             <point key="canvasLocation" x="-128.98550724637681" y="-86.383928571428569"/>
         </scene>
+        <!--Account-->
+        <scene sceneID="wev-ND-9zf">
+            <objects>
+                <viewController id="OvN-CN-AF6" customClass="AccountViewController" customModule="RAD_Advertiser_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fql-Jp-b8w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5a-WF-Rb8" customClass="Button" customModule="RAD_Advertiser_Demo" customModuleProvider="target">
+                                <rect key="frame" x="69" y="408.5" width="276" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jt3-tY-Jtf"/>
+                                </constraints>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutButtonPressed:" destination="OvN-CN-AF6" eventType="touchUpInside" id="m7H-7T-NK9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b5a-WF-Rb8" firstAttribute="width" secondItem="Fql-Jp-b8w" secondAttribute="width" multiplier="2/3" id="7gZ-R1-FRB"/>
+                            <constraint firstItem="b5a-WF-Rb8" firstAttribute="centerY" secondItem="vWA-FV-1vN" secondAttribute="centerY" id="oak-Gc-C2Z"/>
+                            <constraint firstItem="b5a-WF-Rb8" firstAttribute="centerX" secondItem="vWA-FV-1vN" secondAttribute="centerX" id="rpe-JO-u6l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vWA-FV-1vN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" selectedImage="person.fill" id="F9J-h8-B8D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hO1-3r-7Pq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="654"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cart_icon" width="25" height="25"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="products_icon" width="25" height="25"/>
     </resources>
 </document>

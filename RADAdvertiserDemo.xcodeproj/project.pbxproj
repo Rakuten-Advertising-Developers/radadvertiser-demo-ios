@@ -26,6 +26,11 @@
 		57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEE243785840010B7E9 /* LaunchScreen.storyboard */; };
 		57752F7F245AE86A0022F8B9 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F7E245AE86A0022F8B9 /* SecretConstants.swift */; };
 		57752F81245AF2910022F8B9 /* AttributionSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */; };
+		57FBFFAB246AB2070060B0C9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */; };
+		57FBFFAD246AB2240060B0C9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */; };
+		57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
+		57FBFFB1246ABDC40060B0C9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */; };
+		57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */; };
 		B816B580D435E3B295312F6E /* Pods_RADAdvertiserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414E18424A4F274474E0E880 /* Pods_RADAdvertiserDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,11 @@
 		57436CF724378D5F0010B7E9 /* RADAdvertiserDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RADAdvertiserDemoSwift.entitlements; sourceTree = "<group>"; };
 		57752F7E245AE86A0022F8B9 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 		57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionSDKHandler.swift; sourceTree = "<group>"; };
+		57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +99,7 @@
 		571DA36524447CCF00B44EE8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				57FBFFA9246AB1ED0060B0C9 /* Account */,
 				571DA36C2444839400B44EE8 /* HomeViewController.swift */,
 				571DA3782444935A00B44EE8 /* ProductDetailsViewController.swift */,
 				571DA36E244485BF00B44EE8 /* CartViewController.swift */,
@@ -102,6 +113,7 @@
 				571DA3612444739800B44EE8 /* Collection+Extensions.swift */,
 				571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */,
 				571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */,
+				57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,6 +125,7 @@
 				571DA3702444862500B44EE8 /* OrderManager.swift */,
 				57752F7E245AE86A0022F8B9 /* SecretConstants.swift */,
 				57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */,
+				57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -180,6 +193,16 @@
 			path = RADAdvertiserDemo;
 			sourceTree = "<group>";
 		};
+		57FBFFA9246AB1ED0060B0C9 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */,
+				57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */,
+				57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FBFFAD246AB2240060B0C9 /* SignInViewController.xib in Resources */,
 				57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */,
 				571DA3822445BFFA00B44EE8 /* GoogleService-Info.plist in Resources */,
 				57436CED243785840010B7E9 /* Assets.xcassets in Resources */,
@@ -298,16 +322,20 @@
 			files = (
 				571DA37324448AA600B44EE8 /* ProductCollectionViewLayout.swift in Sources */,
 				571DA37724448C6400B44EE8 /* ProductCell.swift in Sources */,
+				57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */,
 				571DA3792444935A00B44EE8 /* ProductDetailsViewController.swift in Sources */,
 				571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */,
 				571DA364244477B600B44EE8 /* DataProvider.swift in Sources */,
+				57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */,
 				57436CE4243785820010B7E9 /* AppDelegate.swift in Sources */,
 				571DA37B244497A100B44EE8 /* UIImageView+Extensions.swift in Sources */,
+				57FBFFB1246ABDC40060B0C9 /* AccountViewController.swift in Sources */,
 				571DA3802444A4B100B44EE8 /* Button.swift in Sources */,
 				571DA36F244485BF00B44EE8 /* CartViewController.swift in Sources */,
 				57752F7F245AE86A0022F8B9 /* SecretConstants.swift in Sources */,
 				57752F81245AF2910022F8B9 /* AttributionSDKHandler.swift in Sources */,
 				571DA37D2444985D00B44EE8 /* NumberFormatter+Extensions.swift in Sources */,
+				57FBFFAB246AB2070060B0C9 /* SignInViewController.swift in Sources */,
 				571DA3712444862500B44EE8 /* OrderManager.swift in Sources */,
 				571DA36D2444839400B44EE8 /* HomeViewController.swift in Sources */,
 				571DA360244472BE00B44EE8 /* Product.swift in Sources */,
@@ -458,7 +486,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -483,7 +511,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
