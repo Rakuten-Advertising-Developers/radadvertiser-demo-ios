@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RADAttribution
+import RakutenAdvertisingAttribution
 
 class ProductDetailsViewController: UIViewController {
     
@@ -31,7 +31,7 @@ class ProductDetailsViewController: UIViewController {
         let event = Event(name: "VIEW_ITEM",
                           customData: ["name": product?.name ?? "unknown"])
         
-        RADAttribution.shared.eventSender.send(event: event)
+        RakutenAdvertisingAttribution.shared.eventSender.send(event: event)
     }
     
     func configureNavBar() {

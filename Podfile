@@ -10,7 +10,7 @@ source 'https://github.com/Rakuten-Advertising-Developers/Specs.git'
 target 'RADAdvertiserDemo' do
   
   use_frameworks!
-  pod 'RADAttribution'
+  pod 'RakutenAdvertisingAttribution'
   
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'

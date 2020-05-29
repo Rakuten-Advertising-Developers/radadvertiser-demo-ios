@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RADAttribution
+import RakutenAdvertisingAttribution
 
 protocol OrderModifier: class {
     
@@ -73,7 +73,7 @@ extension OrderManager: OrderModifier {
                           customData: customData,
                           contentItems: [contentItem])
         
-        RADAttribution.shared.eventSender.send(event: event)
+        RakutenAdvertisingAttribution.shared.eventSender.send(event: event)
     }
     
     func purchase() {
@@ -106,7 +106,7 @@ extension OrderManager: OrderModifier {
                           customData: customData,
                           contentItems: contentItems)
         
-        RADAttribution.shared.eventSender.send(event: event)
+        RakutenAdvertisingAttribution.shared.eventSender.send(event: event)
 
         products.removeAll()
     }
