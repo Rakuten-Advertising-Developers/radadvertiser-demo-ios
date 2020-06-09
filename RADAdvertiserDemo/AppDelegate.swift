@@ -9,6 +9,7 @@
 import UIKit
 import RakutenAdvertisingAttribution
 import Firebase
+import AdSupport
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -75,5 +76,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #endif
         RakutenAdvertisingAttribution.shared.linkResolver.delegate = AttributionSDKHandler.shared
         RakutenAdvertisingAttribution.shared.eventSender.delegate = AttributionSDKHandler.shared
+        
+        RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = ASIdentifierManager.shared().isAdvertisingTrackingEnabled
+        RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = ASIdentifierManager.shared().advertisingIdentifier.uuidString
     }
 }
