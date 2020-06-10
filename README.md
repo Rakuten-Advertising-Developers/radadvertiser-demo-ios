@@ -13,4 +13,4 @@ To run the demo project, clone the repo, and run `pod install` from the project 
 
 ## Usage
 
-For more details how you can use RADAttribution please check [documentation](https://github.com/Rakuten-Advertising-Developers/attribution-sdk-ios) (Usage section)
+For more details how you can use RakutenAdvertisingAttribution please check [documentation](https://rakuten-advertising-developers.github.io/RakutenAdvertisingAttribution-iOS-SDK-API-References/)
