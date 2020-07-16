@@ -10,7 +10,7 @@ source 'https://github.com/Rakuten-Advertising-Developers/Specs.git'
 target 'RADAdvertiserDemo' do
   
   use_frameworks!
-  pod 'RakutenAdvertisingAttribution'
+  pod 'RakutenAdvertisingAttribution', :git => 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git', :branch => 'feature/Fingerprint'
   
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
