@@ -486,7 +486,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -511,7 +511,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
