@@ -321,7 +321,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
-  - RakutenAdvertisingAttribution (from `https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git`, branch `feature/MOB-86-Handle-Install-and-Click-events`)
+  - RakutenAdvertisingAttribution (from `https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git`, branch `feature/MOB-86-Handle-Install-and-Click-events-With-Fingerprint`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -350,12 +350,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   RakutenAdvertisingAttribution:
-    :branch: feature/MOB-86-Handle-Install-and-Click-events
+    :branch: feature/MOB-86-Handle-Install-and-Click-events-With-Fingerprint
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 CHECKOUT OPTIONS:
   RakutenAdvertisingAttribution:
-    :commit: 47157bd48324ddec8c85d225d6a1483a639c696c
+    :commit: 55364b85401cd370f7610888ca13ee0574a6dca6
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 SPEC CHECKSUMS:
@@ -383,6 +383,6 @@ SPEC CHECKSUMS:
   RakutenAdvertisingAttribution: d73d2fd3da0d2ff47d92c6435d6ea7c751243a9b
   SwiftJWT: 9a47a71090cae25767078756b5810e3b630aa9a7
 
-PODFILE CHECKSUM: 85c5c0c436163ebc1d734fbde4f8b282cc6fe55a
+PODFILE CHECKSUM: 712ac61bc40ea8644099d5f6237912da7e6098aa
 
 COCOAPODS: 1.9.1
