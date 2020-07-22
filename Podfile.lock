@@ -355,7 +355,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RakutenAdvertisingAttribution:
-    :commit: 55364b85401cd370f7610888ca13ee0574a6dca6
+    :commit: e95f4dade963760821a1dff88164686daf04694a
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 SPEC CHECKSUMS:
