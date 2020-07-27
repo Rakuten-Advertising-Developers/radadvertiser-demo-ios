@@ -55,6 +55,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupUI() {
+
+        switch Environment.app {
+
+        case .main:
+           break
+        case .second:
+            UIBarButtonItem.appearance().tintColor = .magenta
+            UITabBar.appearance().tintColor = .magenta
+        }
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
@@ -65,8 +74,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupRakutenAdvertisingAttribution(with launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
-        
-        let obfuscator = Obfuscator(with: Bundle.main.bundleIdentifier!)
+
+        let salt = "com.rakutenadvertising.RADAdvertiserDemo"//Bundle.main.bundleIdentifier!
+        let obfuscator = Obfuscator(with: salt)
         let configuration = Configuration(key: .data(value: obfuscator.revealData(from: SecretConstants().rakutenAdvertisingAttributionKey)),
                                           launchOptions: launchOptions)
         RakutenAdvertisingAttribution.setup(with: configuration)

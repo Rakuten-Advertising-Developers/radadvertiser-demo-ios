@@ -10,12 +10,15 @@ import UIKit
 
 @IBDesignable
 class Button: UIButton {
-    
-    @IBInspectable
-    var mainColor: UIColor = .systemBlue {
-        
-        didSet {
-            setNeedsDisplay()
+
+    var app: Environment.App = Environment.app
+
+    var mainColor: UIColor {
+        switch app {
+        case .main:
+            return .systemBlue
+        case .second:
+            return .magenta
         }
     }
     

@@ -19,23 +19,51 @@
 		571DA37B244497A100B44EE8 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */; };
 		571DA37D2444985D00B44EE8 /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */; };
 		571DA3802444A4B100B44EE8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37F2444A4B100B44EE8 /* Button.swift */; };
-		571DA3822445BFFA00B44EE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 571DA3812445BFFA00B44EE8 /* GoogleService-Info.plist */; };
 		57436CE4243785820010B7E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57436CE3243785820010B7E9 /* AppDelegate.swift */; };
 		57436CEB243785820010B7E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
 		57436CED243785840010B7E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEC243785840010B7E9 /* Assets.xcassets */; };
 		57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEE243785840010B7E9 /* LaunchScreen.storyboard */; };
+		574DA22B24CF1B8A00B8F09E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */; };
+		574DA22C24CF1B8E00B8F09E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */; };
 		57752F7F245AE86A0022F8B9 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F7E245AE86A0022F8B9 /* SecretConstants.swift */; };
 		57752F81245AF2910022F8B9 /* AttributionSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */; };
+		57CF558C24CF04440006E105 /* ProductCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37224448AA600B44EE8 /* ProductCollectionViewLayout.swift */; };
+		57CF558D24CF04440006E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37624448C6400B44EE8 /* ProductCell.swift */; };
+		57CF558E24CF04440006E105 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
+		57CF558F24CF04440006E105 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3782444935A00B44EE8 /* ProductDetailsViewController.swift */; };
+		57CF559024CF04440006E105 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3612444739800B44EE8 /* Collection+Extensions.swift */; };
+		57CF559124CF04440006E105 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA363244477B600B44EE8 /* DataProvider.swift */; };
+		57CF559224CF04440006E105 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */; };
+		57CF559324CF04440006E105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57436CE3243785820010B7E9 /* AppDelegate.swift */; };
+		57CF559424CF04440006E105 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */; };
+		57CF559524CF04440006E105 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */; };
+		57CF559624CF04440006E105 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37F2444A4B100B44EE8 /* Button.swift */; };
+		57CF559724CF04440006E105 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36E244485BF00B44EE8 /* CartViewController.swift */; };
+		57CF559824CF04440006E105 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F7E245AE86A0022F8B9 /* SecretConstants.swift */; };
+		57CF559924CF04440006E105 /* AttributionSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */; };
+		57CF559A24CF04440006E105 /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */; };
+		57CF559B24CF04440006E105 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */; };
+		57CF559C24CF04440006E105 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3702444862500B44EE8 /* OrderManager.swift */; };
+		57CF559D24CF04440006E105 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36C2444839400B44EE8 /* HomeViewController.swift */; };
+		57CF559E24CF04440006E105 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA35F244472BE00B44EE8 /* Product.swift */; };
+		57CF55A224CF04440006E105 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */; };
+		57CF55A324CF04440006E105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEE243785840010B7E9 /* LaunchScreen.storyboard */; };
+		57CF55A524CF04440006E105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEC243785840010B7E9 /* Assets.xcassets */; };
+		57CF55A624CF04440006E105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
+		57CF55B124CF09A40006E105 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF55B024CF09A40006E105 /* Environment.swift */; };
+		57CF55B224CF09A40006E105 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF55B024CF09A40006E105 /* Environment.swift */; };
 		57FBFFAB246AB2070060B0C9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */; };
 		57FBFFAD246AB2240060B0C9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */; };
 		57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
 		57FBFFB1246ABDC40060B0C9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */; };
 		57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */; };
-		B816B580D435E3B295312F6E /* Pods_RADAdvertiserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414E18424A4F274474E0E880 /* Pods_RADAdvertiserDemo.framework */; };
+		B816B580D435E3B295312F6E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		D73CDDE546AD616948C7B8B5 /* Pods_RADAdvertiserDemoSecond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		414E18424A4F274474E0E880 /* Pods_RADAdvertiserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RADAdvertiserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RADAdvertiserDemoSecond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.debug.xcconfig"; sourceTree = "<group>"; };
 		571DA35F244472BE00B44EE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		571DA3612444739800B44EE8 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		571DA363244477B600B44EE8 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -48,7 +76,6 @@
 		571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		571DA37F2444A4B100B44EE8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		571DA3812445BFFA00B44EE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57436CE0243785820010B7E9 /* RAD Advertiser Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAD Advertiser Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57436CE3243785820010B7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57436CEA243785820010B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,8 +83,13 @@
 		57436CEF243785840010B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57436CF1243785840010B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57436CF724378D5F0010B7E9 /* RADAdvertiserDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RADAdvertiserDemoSwift.entitlements; sourceTree = "<group>"; };
+		574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57752F7E245AE86A0022F8B9 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 		57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionSDKHandler.swift; sourceTree = "<group>"; };
+		57CF55AB24CF04440006E105 /* 2 RAD Advertiser Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 RAD Advertiser Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CF55AD24CF09740006E105 /* InfoSecond.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoSecond.plist; sourceTree = "<group>"; };
+		57CF55B024CF09A40006E105 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -65,6 +97,7 @@
 		57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +105,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B816B580D435E3B295312F6E /* Pods_RADAdvertiserDemo.framework in Frameworks */,
+				B816B580D435E3B295312F6E /* (null) in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CF559F24CF04440006E105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73CDDE546AD616948C7B8B5 /* Pods_RADAdvertiserDemoSecond.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +125,8 @@
 			children = (
 				61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */,
 				B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */,
+				0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */,
+				BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -91,7 +134,7 @@
 		423F101ED4EA988282077884 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				414E18424A4F274474E0E880 /* Pods_RADAdvertiserDemo.framework */,
+				0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,7 +189,8 @@
 				57436CEC243785840010B7E9 /* Assets.xcassets */,
 				57436CEE243785840010B7E9 /* LaunchScreen.storyboard */,
 				57436CF1243785840010B7E9 /* Info.plist */,
-				571DA3812445BFFA00B44EE8 /* GoogleService-Info.plist */,
+				57CF55AD24CF09740006E105 /* InfoSecond.plist */,
+				574DA22624CF1B8600B8F09E /* Firebase */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -175,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				57436CE0243785820010B7E9 /* RAD Advertiser Demo.app */,
+				57CF55AB24CF04440006E105 /* 2 RAD Advertiser Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,9 +233,35 @@
 				571DA36624447CF600B44EE8 /* Extensions */,
 				571DA36524447CCF00B44EE8 /* ViewControllers */,
 				57436CE3243785820010B7E9 /* AppDelegate.swift */,
+				57CF55B024CF09A40006E105 /* Environment.swift */,
 				571DA36924447D2500B44EE8 /* Resources */,
 			);
 			path = RADAdvertiserDemo;
+			sourceTree = "<group>";
+		};
+		574DA22624CF1B8600B8F09E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				574DA22724CF1B8600B8F09E /* second */,
+				574DA22924CF1B8600B8F09E /* main */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		574DA22724CF1B8600B8F09E /* second */ = {
+			isa = PBXGroup;
+			children = (
+				574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */,
+			);
+			path = second;
+			sourceTree = "<group>";
+		};
+		574DA22924CF1B8600B8F09E /* main */ = {
+			isa = PBXGroup;
+			children = (
+				574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 		57FBFFA9246AB1ED0060B0C9 /* Account */ = {
@@ -225,6 +296,25 @@
 			productReference = 57436CE0243785820010B7E9 /* RAD Advertiser Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		57CF558924CF04440006E105 /* RADAdvertiserDemoSecond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "RADAdvertiserDemoSecond" */;
+			buildPhases = (
+				57CF558A24CF04440006E105 /* [CP] Check Pods Manifest.lock */,
+				57CF558B24CF04440006E105 /* Sources */,
+				57CF559F24CF04440006E105 /* Frameworks */,
+				57CF55A124CF04440006E105 /* Resources */,
+				57CF55A724CF04440006E105 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RADAdvertiserDemoSecond;
+			productName = RADAdvertiserDemo;
+			productReference = 57CF55AB24CF04440006E105 /* 2 RAD Advertiser Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,6 +344,7 @@
 			projectRoot = "";
 			targets = (
 				57436CDF243785820010B7E9 /* RADAdvertiserDemo */,
+				57CF558924CF04440006E105 /* RADAdvertiserDemoSecond */,
 			);
 		};
 /* End PBXProject section */
@@ -265,15 +356,66 @@
 			files = (
 				57FBFFAD246AB2240060B0C9 /* SignInViewController.xib in Resources */,
 				57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */,
-				571DA3822445BFFA00B44EE8 /* GoogleService-Info.plist in Resources */,
+				574DA22C24CF1B8E00B8F09E /* GoogleService-Info.plist in Resources */,
 				57436CED243785840010B7E9 /* Assets.xcassets in Resources */,
 				57436CEB243785820010B7E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CF55A124CF04440006E105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CF55A224CF04440006E105 /* SignInViewController.xib in Resources */,
+				57CF55A324CF04440006E105 /* LaunchScreen.storyboard in Resources */,
+				574DA22B24CF1B8A00B8F09E /* GoogleService-Info.plist in Resources */,
+				57CF55A524CF04440006E105 /* Assets.xcassets in Resources */,
+				57CF55A624CF04440006E105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		57CF558A24CF04440006E105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RADAdvertiserDemoSecond-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57CF55A724CF04440006E105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		77C49D46BEDBD5F4A61E11A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,6 +471,7 @@
 				57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */,
 				57436CE4243785820010B7E9 /* AppDelegate.swift in Sources */,
 				571DA37B244497A100B44EE8 /* UIImageView+Extensions.swift in Sources */,
+				57CF55B124CF09A40006E105 /* Environment.swift in Sources */,
 				57FBFFB1246ABDC40060B0C9 /* AccountViewController.swift in Sources */,
 				571DA3802444A4B100B44EE8 /* Button.swift in Sources */,
 				571DA36F244485BF00B44EE8 /* CartViewController.swift in Sources */,
@@ -339,6 +482,33 @@
 				571DA3712444862500B44EE8 /* OrderManager.swift in Sources */,
 				571DA36D2444839400B44EE8 /* HomeViewController.swift in Sources */,
 				571DA360244472BE00B44EE8 /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CF558B24CF04440006E105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CF558C24CF04440006E105 /* ProductCollectionViewLayout.swift in Sources */,
+				57CF558D24CF04440006E105 /* ProductCell.swift in Sources */,
+				57CF558E24CF04440006E105 /* AppCoordinator.swift in Sources */,
+				57CF558F24CF04440006E105 /* ProductDetailsViewController.swift in Sources */,
+				57CF559024CF04440006E105 /* Collection+Extensions.swift in Sources */,
+				57CF559124CF04440006E105 /* DataProvider.swift in Sources */,
+				57CF559224CF04440006E105 /* UIViewController+Extensions.swift in Sources */,
+				57CF559324CF04440006E105 /* AppDelegate.swift in Sources */,
+				57CF559424CF04440006E105 /* UIImageView+Extensions.swift in Sources */,
+				57CF55B224CF09A40006E105 /* Environment.swift in Sources */,
+				57CF559524CF04440006E105 /* AccountViewController.swift in Sources */,
+				57CF559624CF04440006E105 /* Button.swift in Sources */,
+				57CF559724CF04440006E105 /* CartViewController.swift in Sources */,
+				57CF559824CF04440006E105 /* SecretConstants.swift in Sources */,
+				57CF559924CF04440006E105 /* AttributionSDKHandler.swift in Sources */,
+				57CF559A24CF04440006E105 /* NumberFormatter+Extensions.swift in Sources */,
+				57CF559B24CF04440006E105 /* SignInViewController.swift in Sources */,
+				57CF559C24CF04440006E105 /* OrderManager.swift in Sources */,
+				57CF559D24CF04440006E105 /* HomeViewController.swift in Sources */,
+				57CF559E24CF04440006E105 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,8 +656,16 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,6 +673,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MAIN_APP";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemo;
 				PRODUCT_NAME = "RAD Advertiser Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo DEV PP";
@@ -511,8 +690,16 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
 				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,9 +707,78 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MAIN_APP";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemo;
 				PRODUCT_NAME = "RAD Advertiser Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo Production PP";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		57CF55A924CF04440006E105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 27;
+				DEVELOPMENT_TEAM = Y7X3534ZWR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/InfoSecond.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D SECOND_APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemoSecond;
+				PRODUCT_NAME = "2 RAD Advertiser Demo";
+				PROVISIONING_PROFILE_SPECIFIER = "RAd Advertiser Demo Second DEV PP";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		57CF55AA24CF04440006E105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 27;
+				DEVELOPMENT_TEAM = Y7X3534ZWR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/InfoSecond.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D SECOND_APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemoSecond;
+				PRODUCT_NAME = "2 RAD Advertiser Demo";
+				PROVISIONING_PROFILE_SPECIFIER = "RAd Advertiser Demo Second Production PP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -545,6 +801,15 @@
 			buildConfigurations = (
 				57436CF5243785840010B7E9 /* Debug */,
 				57436CF6243785840010B7E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "RADAdvertiserDemoSecond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CF55A924CF04440006E105 /* Debug */,
+				57CF55AA24CF04440006E105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

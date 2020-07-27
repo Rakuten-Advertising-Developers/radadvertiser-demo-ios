@@ -57,6 +57,22 @@ platform :ios do
     )
   end
 
+  lane :betaSecond do
+    updateBuildVersion
+    clearArtifacts
+
+    build_app(
+      workspace: "RADAdvertiserDemo.xcworkspace",
+      scheme: "RADAdvertiserDemoSecond",
+      clean: true,
+      output_directory: "fastlane/Artifacts",
+    )
+
+    upload_to_testflight(
+      beta_app_description: defaultChangeLog
+    )
+  end
+
   desc "Private lanes"
   private_lane :clearArtifacts do
     pathToArtifacts = "./Artifacts"

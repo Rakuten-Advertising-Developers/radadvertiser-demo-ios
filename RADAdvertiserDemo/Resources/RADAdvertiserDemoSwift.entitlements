@@ -7,7 +7,7 @@
 		<string>applinks:rakutenadvertising.app.link</string>
 		<string>applinks:rakutenadvertising-alternate.app.link</string>
 		<string>applinks:rakutenadvertising.io</string>
-		<string>applinks:dev-attribution-sdk.web.app</string>
+		<string>applinks:dev1-attribution-sdk.web.app</string>
 	</array>
 </dict>
 </plist>
