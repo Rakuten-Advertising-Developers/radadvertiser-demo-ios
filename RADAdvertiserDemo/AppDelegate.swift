@@ -49,7 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupFirebase() {
-        
         FirebaseConfiguration.shared.setLoggerLevel(.min)
         FirebaseApp.configure()
     }

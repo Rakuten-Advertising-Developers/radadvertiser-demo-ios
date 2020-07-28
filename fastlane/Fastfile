@@ -47,13 +47,16 @@ platform :ios do
 
     build_app(
       workspace: "RADAdvertiserDemo.xcworkspace",
-      scheme: "RADAdvertiserDemo",
+      scheme: "Main",
       clean: true,
       output_directory: "fastlane/Artifacts",
+      provisioningProfiles: {
+        "com.rakutenadvertising.RADAdvertiserDemo" => "RADAdvertiserDemo Production PP",
+      },
     )
 
     upload_to_testflight(
-      beta_app_description: defaultChangeLog
+      beta_app_description: defaultChangeLog,
     )
   end
 
@@ -63,9 +66,12 @@ platform :ios do
 
     build_app(
       workspace: "RADAdvertiserDemo.xcworkspace",
-      scheme: "RADAdvertiserDemoSecond",
+      scheme: "Second",
       clean: true,
       output_directory: "fastlane/Artifacts",
+      provisioningProfiles: {
+        "com.rakutenadvertising.RADAdvertiserDemoSecond" => "RAd Advertiser Demo Second Production PP",
+      },
     )
 
     upload_to_testflight(

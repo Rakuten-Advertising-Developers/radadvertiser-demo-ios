@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "57CF558924CF04440006E105"
-               BuildableName = "RADAdvertiserDemoSecond.app"
-               BlueprintName = "RADAdvertiserDemoSecond"
+               BuildableName = "2 RAD Advertiser Demo.app"
+               BlueprintName = "Second"
                ReferencedContainer = "container:RADAdvertiserDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "57CF558924CF04440006E105"
-            BuildableName = "RADAdvertiserDemoSecond.app"
-            BlueprintName = "RADAdvertiserDemoSecond"
+            BuildableName = "2 RAD Advertiser Demo.app"
+            BlueprintName = "Second"
             ReferencedContainer = "container:RADAdvertiserDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "57CF558924CF04440006E105"
-            BuildableName = "RADAdvertiserDemoSecond.app"
-            BlueprintName = "RADAdvertiserDemoSecond"
+            BuildableName = "2 RAD Advertiser Demo.app"
+            BlueprintName = "Second"
             ReferencedContainer = "container:RADAdvertiserDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362C12D5727FA0726E424003 /* Pods_RADAdvertiserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C628792F83C150BDF42D7F /* Pods_RADAdvertiserDemo.framework */; };
 		571DA360244472BE00B44EE8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA35F244472BE00B44EE8 /* Product.swift */; };
 		571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3612444739800B44EE8 /* Collection+Extensions.swift */; };
 		571DA364244477B600B44EE8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA363244477B600B44EE8 /* DataProvider.swift */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RADAdvertiserDemoSecond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.debug.xcconfig"; sourceTree = "<group>"; };
+		570B3E7524D02BF300A2C86B /* AppEntitlements.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = AppEntitlements.entitlements; sourceTree = "<group>"; };
 		571DA35F244472BE00B44EE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		571DA3612444739800B44EE8 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		571DA363244477B600B44EE8 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
@@ -76,19 +78,19 @@
 		571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		571DA37F2444A4B100B44EE8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		57436CE0243785820010B7E9 /* RAD Advertiser Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAD Advertiser Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57436CE0243785820010B7E9 /* Adv Main Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adv Main Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57436CE3243785820010B7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57436CEA243785820010B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57436CEC243785840010B7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57436CEF243785840010B7E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57436CF1243785840010B7E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57436CF724378D5F0010B7E9 /* RADAdvertiserDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RADAdvertiserDemoSwift.entitlements; sourceTree = "<group>"; };
+		57436CF724378D5F0010B7E9 /* AppEntitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppEntitlements.entitlements; sourceTree = "<group>"; };
 		574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57752F7E245AE86A0022F8B9 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 		57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionSDKHandler.swift; sourceTree = "<group>"; };
-		57CF55AB24CF04440006E105 /* 2 RAD Advertiser Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2 RAD Advertiser Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57CF55AD24CF09740006E105 /* InfoSecond.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoSecond.plist; sourceTree = "<group>"; };
+		57CF55AB24CF04440006E105 /* Adv Second Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adv Second Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CF55AD24CF09740006E105 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CF55B024CF09A40006E105 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		78C628792F83C150BDF42D7F /* Pods_RADAdvertiserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RADAdvertiserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B816B580D435E3B295312F6E /* (null) in Frameworks */,
+				362C12D5727FA0726E424003 /* Pods_RADAdvertiserDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +139,29 @@
 			isa = PBXGroup;
 			children = (
 				0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */,
+				78C628792F83C150BDF42D7F /* Pods_RADAdvertiserDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		570B3E7324D02B9000A2C86B /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				570B3E7524D02BF300A2C86B /* AppEntitlements.entitlements */,
+				574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */,
+				57CF55AD24CF09740006E105 /* Info.plist */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		570B3E7424D02B9000A2C86B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */,
+				57436CF724378D5F0010B7E9 /* AppEntitlements.entitlements */,
+				57436CF1243785840010B7E9 /* Info.plist */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		571DA36524447CCF00B44EE8 /* ViewControllers */ = {
@@ -184,13 +209,11 @@
 		571DA36924447D2500B44EE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				57436CF724378D5F0010B7E9 /* RADAdvertiserDemoSwift.entitlements */,
 				57436CE9243785820010B7E9 /* Main.storyboard */,
 				57436CEC243785840010B7E9 /* Assets.xcassets */,
 				57436CEE243785840010B7E9 /* LaunchScreen.storyboard */,
-				57436CF1243785840010B7E9 /* Info.plist */,
-				57CF55AD24CF09740006E105 /* InfoSecond.plist */,
-				574DA22624CF1B8600B8F09E /* Firebase */,
+				570B3E7424D02B9000A2C86B /* Main */,
+				570B3E7324D02B9000A2C86B /* Second */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -218,8 +241,8 @@
 		57436CE1243785820010B7E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57436CE0243785820010B7E9 /* RAD Advertiser Demo.app */,
-				57CF55AB24CF04440006E105 /* 2 RAD Advertiser Demo.app */,
+				57436CE0243785820010B7E9 /* Adv Main Demo.app */,
+				57CF55AB24CF04440006E105 /* Adv Second Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,31 +262,6 @@
 			path = RADAdvertiserDemo;
 			sourceTree = "<group>";
 		};
-		574DA22624CF1B8600B8F09E /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				574DA22724CF1B8600B8F09E /* second */,
-				574DA22924CF1B8600B8F09E /* main */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		574DA22724CF1B8600B8F09E /* second */ = {
-			isa = PBXGroup;
-			children = (
-				574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */,
-			);
-			path = second;
-			sourceTree = "<group>";
-		};
-		574DA22924CF1B8600B8F09E /* main */ = {
-			isa = PBXGroup;
-			children = (
-				574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */,
-			);
-			path = main;
-			sourceTree = "<group>";
-		};
 		57FBFFA9246AB1ED0060B0C9 /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,9 +275,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57436CDF243785820010B7E9 /* RADAdvertiserDemo */ = {
+		57436CDF243785820010B7E9 /* Main */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57436CF4243785840010B7E9 /* Build configuration list for PBXNativeTarget "RADAdvertiserDemo" */;
+			buildConfigurationList = 57436CF4243785840010B7E9 /* Build configuration list for PBXNativeTarget "Main" */;
 			buildPhases = (
 				B62C6DE68CDB511D7F75CE62 /* [CP] Check Pods Manifest.lock */,
 				57436CDC243785820010B7E9 /* Sources */,
@@ -291,14 +289,14 @@
 			);
 			dependencies = (
 			);
-			name = RADAdvertiserDemo;
+			name = Main;
 			productName = RADAdvertiserDemo;
-			productReference = 57436CE0243785820010B7E9 /* RAD Advertiser Demo.app */;
+			productReference = 57436CE0243785820010B7E9 /* Adv Main Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		57CF558924CF04440006E105 /* RADAdvertiserDemoSecond */ = {
+		57CF558924CF04440006E105 /* Second */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "RADAdvertiserDemoSecond" */;
+			buildConfigurationList = 57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "Second" */;
 			buildPhases = (
 				57CF558A24CF04440006E105 /* [CP] Check Pods Manifest.lock */,
 				57CF558B24CF04440006E105 /* Sources */,
@@ -310,9 +308,9 @@
 			);
 			dependencies = (
 			);
-			name = RADAdvertiserDemoSecond;
+			name = Second;
 			productName = RADAdvertiserDemo;
-			productReference = 57CF55AB24CF04440006E105 /* 2 RAD Advertiser Demo.app */;
+			productReference = 57CF55AB24CF04440006E105 /* Adv Second Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -343,8 +341,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57436CDF243785820010B7E9 /* RADAdvertiserDemo */,
-				57CF558924CF04440006E105 /* RADAdvertiserDemoSecond */,
+				57436CDF243785820010B7E9 /* Main */,
+				57CF558924CF04440006E105 /* Second */,
 			);
 		};
 /* End PBXProject section */
@@ -653,10 +651,10 @@
 			baseConfigurationReference = 61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -666,7 +664,7 @@
 					"PB_NO_PACKED_STRUCTS=1",
 					"PB_ENABLE_MALLOC=1",
 				);
-				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -675,7 +673,7 @@
 				MARKETING_VERSION = 1.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MAIN_APP";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemo;
-				PRODUCT_NAME = "RAD Advertiser Demo";
+				PRODUCT_NAME = "Adv Main Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo DEV PP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -687,10 +685,10 @@
 			baseConfigurationReference = B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -700,7 +698,7 @@
 					"PB_NO_PACKED_STRUCTS=1",
 					"PB_ENABLE_MALLOC=1",
 				);
-				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Info.plist;
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Main/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -709,7 +707,7 @@
 				MARKETING_VERSION = 1.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MAIN_APP";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemo;
-				PRODUCT_NAME = "RAD Advertiser Demo";
+				PRODUCT_NAME = "Adv Main Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo Production PP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -721,10 +719,10 @@
 			baseConfigurationReference = 0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -734,7 +732,7 @@
 					"PB_NO_PACKED_STRUCTS=1",
 					"PB_ENABLE_MALLOC=1",
 				);
-				INFOPLIST_FILE = RADAdvertiserDemo/Resources/InfoSecond.plist;
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Second/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -743,7 +741,7 @@
 				MARKETING_VERSION = 1.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D SECOND_APP";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemoSecond;
-				PRODUCT_NAME = "2 RAD Advertiser Demo";
+				PRODUCT_NAME = "Adv Second Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "RAd Advertiser Demo Second DEV PP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -755,10 +753,10 @@
 			baseConfigurationReference = BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/RADAdvertiserDemoSwift.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -768,7 +766,7 @@
 					"PB_NO_PACKED_STRUCTS=1",
 					"PB_ENABLE_MALLOC=1",
 				);
-				INFOPLIST_FILE = RADAdvertiserDemo/Resources/InfoSecond.plist;
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Second/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -777,7 +775,7 @@
 				MARKETING_VERSION = 1.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D SECOND_APP";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemoSecond;
-				PRODUCT_NAME = "2 RAD Advertiser Demo";
+				PRODUCT_NAME = "Adv Second Demo";
 				PROVISIONING_PROFILE_SPECIFIER = "RAd Advertiser Demo Second Production PP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -796,7 +794,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57436CF4243785840010B7E9 /* Build configuration list for PBXNativeTarget "RADAdvertiserDemo" */ = {
+		57436CF4243785840010B7E9 /* Build configuration list for PBXNativeTarget "Main" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57436CF5243785840010B7E9 /* Debug */,
@@ -805,7 +803,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "RADAdvertiserDemoSecond" */ = {
+		57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "Second" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57CF55A924CF04440006E105 /* Debug */,
