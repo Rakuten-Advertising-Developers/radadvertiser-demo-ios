@@ -33,11 +33,6 @@ fastlane ios beta
 Private properties
 
 Push a new beta build to TestFlight
-### ios badgeIt
-```
-fastlane ios badgeIt
-```
-
 ### ios betaSecond
 ```
 fastlane ios betaSecond

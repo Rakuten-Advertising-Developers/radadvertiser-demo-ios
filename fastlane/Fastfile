@@ -50,8 +50,11 @@ platform :ios do
       scheme: "Main",
       clean: true,
       output_directory: "fastlane/Artifacts",
-      provisioningProfiles: {
-        "com.rakutenadvertising.RADAdvertiserDemo" => "RADAdvertiserDemo Production PP",
+      export_options: {
+        method: "app-store",
+        provisioningProfiles: {
+          "com.rakutenadvertising.RADAdvertiserDemo" => "RADAdvertiserDemo Production PP",
+        },
       },
     )
 
@@ -69,13 +72,16 @@ platform :ios do
       scheme: "Second",
       clean: true,
       output_directory: "fastlane/Artifacts",
-      provisioningProfiles: {
-        "com.rakutenadvertising.RADAdvertiserDemoSecond" => "RAd Advertiser Demo Second Production PP",
+      export_options: {
+        method: "app-store",
+        provisioningProfiles: {
+          "com.rakutenadvertising.RADAdvertiserDemoSecond" => "RAd Advertiser Demo Second Production PP",
+        },
       },
     )
 
     upload_to_testflight(
-      beta_app_description: defaultChangeLog
+      beta_app_description: defaultChangeLog,
     )
   end
 
