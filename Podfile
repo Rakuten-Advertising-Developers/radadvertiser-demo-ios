@@ -7,6 +7,8 @@ inhibit_all_warnings!
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Rakuten-Advertising-Developers/Specs.git'
 
+use_frameworks!
+
 def required_pods
 
    pod 'RakutenAdvertisingAttribution', :git => 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git', :branch => 'develop'
@@ -16,16 +18,10 @@ def required_pods
 
 end
 
-target 'RADAdvertiserDemo' do
-  
-  use_frameworks!
+target 'Main' do
   required_pods
-  
 end
 
-target 'RADAdvertiserDemoSecond' do
-
-  use_frameworks!
+target 'Second' do
   required_pods
-
 end

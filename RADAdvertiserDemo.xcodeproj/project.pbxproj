@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		362C12D5727FA0726E424003 /* Pods_RADAdvertiserDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C628792F83C150BDF42D7F /* Pods_RADAdvertiserDemo.framework */; };
 		571DA360244472BE00B44EE8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA35F244472BE00B44EE8 /* Product.swift */; };
 		571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3612444739800B44EE8 /* Collection+Extensions.swift */; };
 		571DA364244477B600B44EE8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA363244477B600B44EE8 /* DataProvider.swift */; };
@@ -58,13 +57,16 @@
 		57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
 		57FBFFB1246ABDC40060B0C9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */; };
 		57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */; };
-		B816B580D435E3B295312F6E /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		D73CDDE546AD616948C7B8B5 /* Pods_RADAdvertiserDemoSecond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */; };
+		82E853D41822E8494112EC91 /* Pods_Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */; };
+		875C2DC1DF32FB995684C26C /* Pods_Second.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16422DB22ABA66EC310394D3 /* Pods_Second.framework */; };
+		B816B580D435E3B295312F6E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RADAdvertiserDemoSecond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.debug.xcconfig"; sourceTree = "<group>"; };
+		16422DB22ABA66EC310394D3 /* Pods_Second.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Second.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Main.release.xcconfig"; path = "Target Support Files/Pods-Main/Pods-Main.release.xcconfig"; sourceTree = "<group>"; };
+		54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		570B3E7524D02BF300A2C86B /* AppEntitlements.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = AppEntitlements.entitlements; sourceTree = "<group>"; };
 		571DA35F244472BE00B44EE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		571DA3612444739800B44EE8 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
@@ -98,9 +100,11 @@
 		57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		78C628792F83C150BDF42D7F /* Pods_RADAdvertiserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RADAdvertiserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Main.debug.xcconfig"; path = "Target Support Files/Pods-Main/Pods-Main.debug.xcconfig"; sourceTree = "<group>"; };
+		A8B771A82BC1E5DB4CC3B7F6 /* Pods-Second.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Second.release.xcconfig"; path = "Target Support Files/Pods-Second/Pods-Second.release.xcconfig"; sourceTree = "<group>"; };
 		B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.release.xcconfig"; sourceTree = "<group>"; };
+		D6EFF3125881B602C975FD36 /* Pods-Second.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Second.debug.xcconfig"; path = "Target Support Files/Pods-Second/Pods-Second.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B816B580D435E3B295312F6E /* (null) in Frameworks */,
-				362C12D5727FA0726E424003 /* Pods_RADAdvertiserDemo.framework in Frameworks */,
+				82E853D41822E8494112EC91 /* Pods_Main.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D73CDDE546AD616948C7B8B5 /* Pods_RADAdvertiserDemoSecond.framework in Frameworks */,
+				875C2DC1DF32FB995684C26C /* Pods_Second.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +134,10 @@
 				B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */,
 				0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */,
 				BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */,
+				628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */,
+				3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */,
+				D6EFF3125881B602C975FD36 /* Pods-Second.debug.xcconfig */,
+				A8B771A82BC1E5DB4CC3B7F6 /* Pods-Second.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -138,8 +145,8 @@
 		423F101ED4EA988282077884 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0DE294D2B6BACCD9935D5480 /* Pods_RADAdvertiserDemoSecond.framework */,
-				78C628792F83C150BDF42D7F /* Pods_RADAdvertiserDemo.framework */,
+				54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */,
+				16422DB22ABA66EC310394D3 /* Pods_Second.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -390,7 +397,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RADAdvertiserDemoSecond-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Second-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -403,15 +410,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Second/Pods-Second-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Second/Pods-Second-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Second/Pods-Second-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77C49D46BEDBD5F4A61E11A2 /* [CP] Embed Pods Frameworks */ = {
@@ -420,15 +427,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B62C6DE68CDB511D7F75CE62 /* [CP] Check Pods Manifest.lock */ = {
@@ -446,7 +453,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RADAdvertiserDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Main-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -648,13 +655,13 @@
 		};
 		57436CF5243785840010B7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */;
+			baseConfigurationReference = 628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -682,13 +689,13 @@
 		};
 		57436CF6243785840010B7E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */;
+			baseConfigurationReference = 3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -716,13 +723,13 @@
 		};
 		57CF55A924CF04440006E105 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */;
+			baseConfigurationReference = D6EFF3125881B602C975FD36 /* Pods-Second.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -750,13 +757,13 @@
 		};
 		57CF55AA24CF04440006E105 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */;
+			baseConfigurationReference = A8B771A82BC1E5DB4CC3B7F6 /* Pods-Second.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 32;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
