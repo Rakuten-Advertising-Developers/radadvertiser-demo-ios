@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.rakutenadvertising.RADAdvertiserDemo</string>
+			<string>com.rakutenadvertising.RADAdvertiserDemoSecond</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>radadvertiserdemo</string>
+				<string>radadvertiserdemosecond</string>
 			</array>
 		</dict>
 	</array>
