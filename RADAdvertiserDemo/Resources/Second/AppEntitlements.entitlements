@@ -5,6 +5,8 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:dev2-attribution-sdk.web.app</string>
+		<string>applinks:click.linksynergy.com</string>
+		<string>applinks:m2affiliate.rakutenadvertising.io</string>
 	</array>
 </dict>
 </plist>
