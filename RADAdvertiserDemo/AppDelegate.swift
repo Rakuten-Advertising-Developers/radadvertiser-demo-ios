@@ -9,6 +9,7 @@
 import UIKit
 import RakutenAdvertisingAttribution
 import Firebase
+import FirebaseCore
 import AdSupport
 
 @UIApplicationMain
@@ -30,15 +31,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+
         RakutenAdvertisingAttribution.shared.linkResolver.resolveLink(url: url)
         return true
     }
+
+    func shouldIgnoreLinkResolver(userActivity: NSUserActivity) -> Bool {
+
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+            let incomingURL = userActivity.webpageURL,
+            let host = incomingURL.host else { return false }
+
+        let excludedDomains: Set<String> = ["example.com", "excluded.com"]
+        return excludedDomains.contains(host)
+    }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        
         let resolved = RakutenAdvertisingAttribution.shared.linkResolver.resolve(userActivity: userActivity)
         if resolved {
             print("userActivity available to resolve")
