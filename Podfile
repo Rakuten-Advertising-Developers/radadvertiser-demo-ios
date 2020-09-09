@@ -11,7 +11,7 @@ use_frameworks!
 
 def required_pods
 
-   pod 'RakutenAdvertisingAttribution', :git => 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git', :branch => 'develop'
+   pod 'RakutenAdvertisingAttribution', :git => 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git', :branch => 'feature/MOB-92_Update_resolve_link_response_struct'
 
    pod 'Firebase/Firestore'
    pod 'Firebase/Auth'
