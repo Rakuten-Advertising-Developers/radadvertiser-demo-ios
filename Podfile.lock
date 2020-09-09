@@ -321,7 +321,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
-  - RakutenAdvertisingAttribution (from `https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git`, branch `feature/MOB-92_Update_resolve_link_response_struct`)
+  - RakutenAdvertisingAttribution (from `https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git`, branch `develop`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -350,12 +350,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   RakutenAdvertisingAttribution:
-    :branch: feature/MOB-92_Update_resolve_link_response_struct
+    :branch: develop
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 CHECKOUT OPTIONS:
   RakutenAdvertisingAttribution:
-    :commit: 3eeef9bdd5eadbf170b458993df2b37ca732e590
+    :commit: 023c926d59d36e6005e6033ef3c3f4897355678b
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 SPEC CHECKSUMS:
@@ -383,6 +383,6 @@ SPEC CHECKSUMS:
   RakutenAdvertisingAttribution: d73d2fd3da0d2ff47d92c6435d6ea7c751243a9b
   SwiftJWT: 9a47a71090cae25767078756b5810e3b630aa9a7
 
-PODFILE CHECKSUM: 8ea1878c118ef1c25872e71cb6bb47d6b8471318
+PODFILE CHECKSUM: 841a90b7a7a7e8c5658f592a54e33f806e363d03
 
 COCOAPODS: 1.9.3
