@@ -221,12 +221,12 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
-  - Firebase/Auth (6.32.0):
+  - Firebase/Auth (6.32.2):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.9.1)
-  - Firebase/CoreOnly (6.32.0):
+  - Firebase/CoreOnly (6.32.2):
     - FirebaseCore (= 6.10.2)
-  - Firebase/Firestore (6.32.0):
+  - Firebase/Firestore (6.32.2):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.17.1)
   - FirebaseAuth (6.9.1):
@@ -355,7 +355,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RakutenAdvertisingAttribution:
-    :commit: 023c926d59d36e6005e6033ef3c3f4897355678b
+    :commit: 6c38b845d3a922c220c5d1e6dde9a5c6c70c59e0
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 SPEC CHECKSUMS:
@@ -364,7 +364,7 @@ SPEC CHECKSUMS:
   BlueECC: 0d18e93347d3ec6d41416de21c1ffa4d4cd3c2cc
   BlueRSA: 6f9776d62d9773502415a7db3bcbb2bbb3f71fc3
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
-  Firebase: afa030f17f5421810f379a42b0e5d3302d27eb26
+  Firebase: 47176280bfba198e531f909cfb1612dad216cb96
   FirebaseAuth: f7b269b33c1e842a35400ddc9bbc8b03cdc47ba3
   FirebaseCore: 1d697bb944bf2af5fc248f1a66e165c9dd88bf97
   FirebaseCoreDiagnostics: 7415bfb3883b3500c5a95c42b6ba66baae78f600
