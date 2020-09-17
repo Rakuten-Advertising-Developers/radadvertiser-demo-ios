@@ -52,6 +52,8 @@
 		57CF55A624CF04440006E105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
 		57CF55B124CF09A40006E105 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF55B024CF09A40006E105 /* Environment.swift */; };
 		57CF55B224CF09A40006E105 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF55B024CF09A40006E105 /* Environment.swift */; };
+		57D4BF002513898F00A51988 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57D4BEFF2513898F00A51988 /* Settings.bundle */; };
+		57D4BF012513898F00A51988 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57D4BEFF2513898F00A51988 /* Settings.bundle */; };
 		57FBFFAB246AB2070060B0C9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */; };
 		57FBFFAD246AB2240060B0C9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */; };
 		57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
@@ -59,7 +61,6 @@
 		57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */; };
 		82E853D41822E8494112EC91 /* Pods_Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */; };
 		875C2DC1DF32FB995684C26C /* Pods_Second.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16422DB22ABA66EC310394D3 /* Pods_Second.framework */; };
-		B816B580D435E3B295312F6E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		57CF55AB24CF04440006E105 /* Adv Second Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adv Second Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CF55AD24CF09740006E105 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CF55B024CF09A40006E105 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		57D4BEFF2513898F00A51988 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		571DA36924447D2500B44EE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57D4BEFF2513898F00A51988 /* Settings.bundle */,
 				57436CE9243785820010B7E9 /* Main.storyboard */,
 				57436CEC243785840010B7E9 /* Assets.xcassets */,
 				57436CEE243785840010B7E9 /* LaunchScreen.storyboard */,
@@ -363,6 +366,7 @@
 				57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */,
 				574DA22C24CF1B8E00B8F09E /* GoogleService-Info.plist in Resources */,
 				57436CED243785840010B7E9 /* Assets.xcassets in Resources */,
+				57D4BF002513898F00A51988 /* Settings.bundle in Resources */,
 				57436CEB243785820010B7E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +379,7 @@
 				57CF55A324CF04440006E105 /* LaunchScreen.storyboard in Resources */,
 				574DA22B24CF1B8A00B8F09E /* GoogleService-Info.plist in Resources */,
 				57CF55A524CF04440006E105 /* Assets.xcassets in Resources */,
+				57D4BF012513898F00A51988 /* Settings.bundle in Resources */,
 				57CF55A624CF04440006E105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,7 +666,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -695,7 +700,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -729,7 +734,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -763,7 +768,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 38;
+				CURRENT_PROJECT_VERSION = 42;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
