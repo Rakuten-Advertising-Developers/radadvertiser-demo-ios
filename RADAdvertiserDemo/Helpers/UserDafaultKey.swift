@@ -10,5 +10,5 @@ import Foundation
 
 struct UserDafaultKey {
 
-    static let customBaseURL: String = "UserDafaultKey.customBaseURL"
+    static let useStageEnvironment: String = "UserDafaultKey.useStageEnvironment"
 }

@@ -28,10 +28,10 @@ class ProductDetailsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let event = Event(name: "VIEW_ITEM",
-                          customData: ["name": product?.name ?? "unknown"])
-        
-        RakutenAdvertisingAttribution.shared.eventSender.send(event: event)
+//        let event = Event(name: "VIEW_ITEM",
+//                          customData: ["name": product?.name ?? "unknown"])
+//        
+//        RakutenAdvertisingAttribution.shared.eventSender.send(event: event)
     }
     
     func configureNavBar() {

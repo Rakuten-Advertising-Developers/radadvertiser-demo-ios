@@ -46,7 +46,7 @@ class CartViewController: UIViewController {
     
     func updateContent() {
         
-        let productsCount = orderDescriber?.productsCount ?? 0
+        let productsCount = orderDescriber?.orderItemsCount ?? 0
         
         navigationController?.tabBarItem.badgeValue = productsCount > 0 ? String(productsCount) : nil
         
@@ -68,7 +68,7 @@ extension CartViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return orderDescriber?.productsCount ?? 0
+        return orderDescriber?.orderItemsCount ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -77,10 +77,10 @@ extension CartViewController: UITableViewDataSource {
         
         guard let orderDescriber = orderDescriber else { return cell }
         
-        let product = orderDescriber.product(at: indexPath.row)
+        let orderItemRepresentation = orderDescriber.orderItem(at: indexPath.row)
         
-        cell.textLabel?.text = product.name
-        cell.detailTextLabel?.text = NumberFormatter.string(decimal: product.price)
+        cell.textLabel?.text = orderItemRepresentation.product.name
+        cell.detailTextLabel?.text = String("\(orderItemRepresentation.quantity) x ") + (NumberFormatter.string(decimal: orderItemRepresentation.product.price) ?? "")
         
         return cell
     }

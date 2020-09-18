@@ -9,9 +9,13 @@ source 'https://github.com/Rakuten-Advertising-Developers/Specs.git'
 
 use_frameworks!
 
+GIT_URL = 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git'
+GIT_BRANCH = 'develop'
+DEPLOYMENT_TARGET = '13.0'
+
 def required_pods
 
-  pod 'RakutenAdvertisingAttribution', :git => 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git', :branch => 'develop'
+  pod 'RakutenAdvertisingAttribution', :git => GIT_URL, :branch => GIT_BRANCH
 
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
@@ -29,7 +33,7 @@ end
 post_install do |pi|
     pi.pods_project.targets.each do |t|
       t.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = DEPLOYMENT_TARGET
       end
     end
 end
