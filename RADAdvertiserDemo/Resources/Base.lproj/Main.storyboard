@@ -317,6 +317,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fwb-LS-Lbm">
+                                <rect key="frame" x="69" y="98.5" width="276" height="32"/>
+                                <segments>
+                                    <segment title="Production"/>
+                                    <segment title="Stage"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="OvN-CN-AF6" eventType="valueChanged" id="8OT-Od-ep4"/>
+                                </connections>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5a-WF-Rb8" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
                                 <rect key="frame" x="69" y="753" width="276" height="40"/>
                                 <constraints>
@@ -327,63 +337,30 @@
                                     <action selector="signOutButtonPressed:" destination="OvN-CN-AF6" eventType="touchUpInside" id="m7H-7T-NK9"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="i7t-sQ-x9p">
-                                <rect key="frame" x="10" y="54" width="394" height="210"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK base URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz9-BX-GPR">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="41.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="https://api.rakutenadvertising.io" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eR1-du-TPe">
-                                        <rect key="frame" x="0.0" y="56.5" width="394" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="OvN-CN-AF6" id="3GS-hj-P4Z"/>
-                                        </connections>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-9c-OPF" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="112.5" width="394" height="41.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Save URL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="saveURLButtonPressed:" destination="OvN-CN-AF6" eventType="touchUpInside" id="vQE-wf-Q2k"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqu-8G-Rf9" userLabel="Reset To Default URL" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="169" width="394" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Reset To Default URL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="resetToDefaultURLButtonPressed:" destination="OvN-CN-AF6" eventType="touchUpInside" id="F1K-Ks-SAf"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="Bzj-2q-GeW"/>
-                                </constraints>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Environment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz9-BX-GPR">
+                                <rect key="frame" x="10" y="64" width="394" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vWA-FV-1vN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vWA-FV-1vN" firstAttribute="trailing" secondItem="i7t-sQ-x9p" secondAttribute="trailing" constant="10" id="1Ub-Ka-WQy"/>
-                            <constraint firstItem="i7t-sQ-x9p" firstAttribute="leading" secondItem="vWA-FV-1vN" secondAttribute="leading" constant="10" id="3G9-qf-VWF"/>
+                            <constraint firstItem="vWA-FV-1vN" firstAttribute="trailing" secondItem="yz9-BX-GPR" secondAttribute="trailing" constant="10" id="3lS-rS-Foa"/>
                             <constraint firstItem="b5a-WF-Rb8" firstAttribute="width" secondItem="Fql-Jp-b8w" secondAttribute="width" multiplier="2/3" id="7gZ-R1-FRB"/>
+                            <constraint firstItem="Fwb-LS-Lbm" firstAttribute="centerX" secondItem="vWA-FV-1vN" secondAttribute="centerX" id="RAH-XH-dcc"/>
+                            <constraint firstItem="yz9-BX-GPR" firstAttribute="top" secondItem="vWA-FV-1vN" secondAttribute="top" constant="20" id="cZW-W5-YAP"/>
+                            <constraint firstItem="yz9-BX-GPR" firstAttribute="leading" secondItem="vWA-FV-1vN" secondAttribute="leading" constant="10" id="dxk-Ge-e5N"/>
+                            <constraint firstItem="Fwb-LS-Lbm" firstAttribute="top" secondItem="yz9-BX-GPR" secondAttribute="bottom" constant="20" id="eFq-rY-90n"/>
                             <constraint firstItem="vWA-FV-1vN" firstAttribute="bottom" secondItem="b5a-WF-Rb8" secondAttribute="bottom" constant="20" id="kA6-By-dVK"/>
-                            <constraint firstItem="i7t-sQ-x9p" firstAttribute="top" secondItem="vWA-FV-1vN" secondAttribute="top" constant="10" id="l3U-60-ARo"/>
                             <constraint firstItem="b5a-WF-Rb8" firstAttribute="centerX" secondItem="vWA-FV-1vN" secondAttribute="centerX" id="rpe-JO-u6l"/>
+                            <constraint firstItem="Fwb-LS-Lbm" firstAttribute="width" secondItem="Fql-Jp-b8w" secondAttribute="width" multiplier="2/3" id="s8v-6e-69B"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" selectedImage="person.fill" id="F9J-h8-B8D"/>
                     <connections>
-                        <outlet property="customBaseURLTextField" destination="eR1-du-TPe" id="71A-wD-Nsp"/>
+                        <outlet property="segmentControl" destination="Fwb-LS-Lbm" id="gbF-BO-3FE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hO1-3r-7Pq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -394,12 +371,6 @@
     <designables>
         <designable name="0yN-tC-lkQ">
             <size key="intrinsicContentSize" width="64" height="30"/>
-        </designable>
-        <designable name="4cX-9c-OPF">
-            <size key="intrinsicContentSize" width="78" height="34"/>
-        </designable>
-        <designable name="Kqu-8G-Rf9">
-            <size key="intrinsicContentSize" width="171" height="34"/>
         </designable>
         <designable name="b5a-WF-Rb8">
             <size key="intrinsicContentSize" width="70" height="34"/>

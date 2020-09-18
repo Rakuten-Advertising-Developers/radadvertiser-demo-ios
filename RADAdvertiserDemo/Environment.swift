@@ -27,14 +27,3 @@ struct Environment {
         #endif
     }
 }
-
-extension Environment.App: BackendURLProvider {
-
-    var backendURL: URL {
-
-        guard let url: URL = UserDefaults.standard.url(forKey: UserDafaultKey.customBaseURL) else {
-            return BackendInfo.defaultConfiguration.backendURL
-        }
-        return url
-    }
-}

@@ -85,11 +85,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupRakutenAdvertisingAttribution(with launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
 
+        let useStageEnvironment = UserDefaults.standard.bool(forKey: UserDafaultKey.useStageEnvironment)
+
         let salt = "com.rakutenadvertising.RADAdvertiserDemo"//Bundle.main.bundleIdentifier!
         let obfuscator = Obfuscator(with: salt)
         let configuration = Configuration(key: .data(value: obfuscator.revealData(from: SecretConstants().rakutenAdvertisingAttributionKey)),
                                           launchOptions: launchOptions,
-                                          backendURLProvider: Environment.app)
+                                          backendURLProvider: useStageEnvironment ? BackendInfo.stageConfiguration : BackendInfo.defaultConfiguration )
 
         RakutenAdvertisingAttribution.setup(with: configuration)
         
