@@ -17,16 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var coordinator: AppCoordinator?
-
-    var userDafaults = UserDefaults.standard
-    var notificationCenter = NotificationCenter.default
-
-    var currentBaseURL: URL?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         setupFirebase()
-        subscribeToNotifications()
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge],
                                                                 completionHandler: { _, _ in })
@@ -69,34 +63,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseConfiguration.shared.setLoggerLevel(.min)
         FirebaseApp.configure()
     }
-
-    func subscribeToNotifications() {
-
-        NotificationCenter.default.addObserver(self, selector: #selector(settingChanged), name: UserDefaults.didChangeNotification, object: nil)
-    }
-
-    @objc func settingChanged(_ notification: Notification) {
-
-        guard currentBaseURL != customSDKBaseURL() else {
-            return
-        }
-        NotificationCenter.default.removeObserver(self)
-        showRelaunchAlert()
-    }
-
-    func showRelaunchAlert() {
-
-        let alertController = UIAlertController(title: "App Relaunch Required", message: "Looks like app's settings updated, please relaunch the app to apply all changes", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] _ in
-            self?.showRelaunchAlert()
-        }))
-
-        var vc: UIViewController? = window?.rootViewController
-        while vc?.presentedViewController != nil {
-            vc = vc?.presentedViewController
-        }
-        vc?.present(alertController, animated: true)
-    }
     
     func setupUI() {
 
@@ -123,9 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let obfuscator = Obfuscator(with: salt)
         let configuration = Configuration(key: .data(value: obfuscator.revealData(from: SecretConstants().rakutenAdvertisingAttributionKey)),
                                           launchOptions: launchOptions,
-                                          backendURLProvider: customSDKBaseURL() == nil ? BackendInfo.defaultConfiguration : self)
-
-        currentBaseURL = configuration.backendURLProvider.backendURL
+                                          backendURLProvider: Environment.app)
 
         RakutenAdvertisingAttribution.setup(with: configuration)
         
@@ -137,19 +101,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = ASIdentifierManager.shared().isAdvertisingTrackingEnabled
         RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-    }
-
-    func customSDKBaseURL() -> URL? {
-
-        let settingsKey = "app_settings_baseURL"
-        return UserDefaults.standard.string(forKey: settingsKey).flatMap { return URL(string: $0) }
-    }
-}
-
-extension AppDelegate: BackendURLProvider {
-
-    var backendURL: URL {
-
-        return customSDKBaseURL()!
     }
 }

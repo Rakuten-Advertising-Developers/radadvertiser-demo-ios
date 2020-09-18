@@ -27,6 +27,8 @@
 		574DA22C24CF1B8E00B8F09E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */; };
 		57752F7F245AE86A0022F8B9 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F7E245AE86A0022F8B9 /* SecretConstants.swift */; };
 		57752F81245AF2910022F8B9 /* AttributionSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */; };
+		578F753C2514AF4100E5FB0E /* UserDafaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */; };
+		578F753D2514AF4100E5FB0E /* UserDafaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */; };
 		57CF558C24CF04440006E105 /* ProductCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37224448AA600B44EE8 /* ProductCollectionViewLayout.swift */; };
 		57CF558D24CF04440006E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37624448C6400B44EE8 /* ProductCell.swift */; };
 		57CF558E24CF04440006E105 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
@@ -52,8 +54,6 @@
 		57CF55A624CF04440006E105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
 		57CF55B124CF09A40006E105 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF55B024CF09A40006E105 /* Environment.swift */; };
 		57CF55B224CF09A40006E105 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF55B024CF09A40006E105 /* Environment.swift */; };
-		57D4BF002513898F00A51988 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57D4BEFF2513898F00A51988 /* Settings.bundle */; };
-		57D4BF012513898F00A51988 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 57D4BEFF2513898F00A51988 /* Settings.bundle */; };
 		57FBFFAB246AB2070060B0C9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */; };
 		57FBFFAD246AB2240060B0C9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */; };
 		57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
@@ -92,10 +92,10 @@
 		574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57752F7E245AE86A0022F8B9 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 		57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionSDKHandler.swift; sourceTree = "<group>"; };
+		578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDafaultKey.swift; sourceTree = "<group>"; };
 		57CF55AB24CF04440006E105 /* Adv Second Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adv Second Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CF55AD24CF09740006E105 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CF55B024CF09A40006E105 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		57D4BEFF2513898F00A51988 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -203,6 +203,7 @@
 				57752F7E245AE86A0022F8B9 /* SecretConstants.swift */,
 				57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */,
 				57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */,
+				578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,7 +219,6 @@
 		571DA36924447D2500B44EE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				57D4BEFF2513898F00A51988 /* Settings.bundle */,
 				57436CE9243785820010B7E9 /* Main.storyboard */,
 				57436CEC243785840010B7E9 /* Assets.xcassets */,
 				57436CEE243785840010B7E9 /* LaunchScreen.storyboard */,
@@ -366,7 +366,6 @@
 				57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */,
 				574DA22C24CF1B8E00B8F09E /* GoogleService-Info.plist in Resources */,
 				57436CED243785840010B7E9 /* Assets.xcassets in Resources */,
-				57D4BF002513898F00A51988 /* Settings.bundle in Resources */,
 				57436CEB243785820010B7E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +378,6 @@
 				57CF55A324CF04440006E105 /* LaunchScreen.storyboard in Resources */,
 				574DA22B24CF1B8A00B8F09E /* GoogleService-Info.plist in Resources */,
 				57CF55A524CF04440006E105 /* Assets.xcassets in Resources */,
-				57D4BF012513898F00A51988 /* Settings.bundle in Resources */,
 				57CF55A624CF04440006E105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +472,7 @@
 			files = (
 				571DA37324448AA600B44EE8 /* ProductCollectionViewLayout.swift in Sources */,
 				571DA37724448C6400B44EE8 /* ProductCell.swift in Sources */,
+				578F753C2514AF4100E5FB0E /* UserDafaultKey.swift in Sources */,
 				57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */,
 				571DA3792444935A00B44EE8 /* ProductDetailsViewController.swift in Sources */,
 				571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */,
@@ -501,6 +500,7 @@
 			files = (
 				57CF558C24CF04440006E105 /* ProductCollectionViewLayout.swift in Sources */,
 				57CF558D24CF04440006E105 /* ProductCell.swift in Sources */,
+				578F753D2514AF4100E5FB0E /* UserDafaultKey.swift in Sources */,
 				57CF558E24CF04440006E105 /* AppCoordinator.swift in Sources */,
 				57CF558F24CF04440006E105 /* ProductDetailsViewController.swift in Sources */,
 				57CF559024CF04440006E105 /* Collection+Extensions.swift in Sources */,

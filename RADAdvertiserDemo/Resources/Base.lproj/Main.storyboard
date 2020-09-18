@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y8m-i4-lNZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y8m-i4-lNZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +13,7 @@
         <!--Cart-->
         <scene sceneID="lSM-KK-Lmp">
             <objects>
-                <viewController title="Cart" id="eFJ-1N-UPX" customClass="CartViewController" customModule="RAD_Advertiser_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Cart" id="eFJ-1N-UPX" customClass="CartViewController" customModule="Adv_Main_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HRy-Va-N5P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,12 +29,12 @@
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="whg-Fr-3Y0">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="625"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
                                             <outlet property="dataSource" destination="eFJ-1N-UPX" id="xZo-gz-jHa"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-tC-lkQ" customClass="Button" customModule="RAD_Advertiser_Demo" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-tC-lkQ" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
                                         <rect key="frame" x="69" y="645" width="276" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="naB-7D-nUi"/>
@@ -45,7 +47,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="0yN-tC-lkQ" firstAttribute="centerX" secondItem="8FN-Ak-xFt" secondAttribute="centerX" id="3YY-4d-Smm"/>
                                     <constraint firstItem="whg-Fr-3Y0" firstAttribute="top" secondItem="8FN-Ak-xFt" secondAttribute="top" id="5Wp-us-r4x"/>
@@ -57,7 +59,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="BPl-2W-Ak4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BPl-2W-Ak4" firstAttribute="bottom" secondItem="8FN-Ak-xFt" secondAttribute="bottom" id="7zm-h4-daR"/>
                             <constraint firstItem="dnw-6G-jir" firstAttribute="centerX" secondItem="BPl-2W-Ak4" secondAttribute="centerX" id="SGi-28-DQ8"/>
@@ -66,7 +69,6 @@
                             <constraint firstItem="8FN-Ak-xFt" firstAttribute="top" secondItem="BPl-2W-Ak4" secondAttribute="top" id="vWD-bZ-zYh"/>
                             <constraint firstItem="BPl-2W-Ak4" firstAttribute="trailing" secondItem="8FN-Ak-xFt" secondAttribute="trailing" id="yDj-Ka-c8G"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BPl-2W-Ak4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cart" id="g1O-ew-lC6"/>
                     <connections>
@@ -82,7 +84,7 @@
         <!--Product Details View Controller-->
         <scene sceneID="h7g-FN-6hW">
             <objects>
-                <viewController storyboardIdentifier="ProductDetailsViewController" id="ShE-Si-qc6" customClass="ProductDetailsViewController" customModule="RAD_Advertiser_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductDetailsViewController" id="ShE-Si-qc6" customClass="ProductDetailsViewController" customModule="Adv_Main_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eOI-UB-heT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +107,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-r9-eg2" customClass="Button" customModule="RAD_Advertiser_Demo" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-r9-eg2" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
                                 <rect key="frame" x="69" y="473.5" width="276" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sKv-NE-UvO"/>
@@ -115,7 +117,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
-                                        <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemBlueColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -123,7 +125,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zlC-Uh-5l2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="I6n-oL-cCP" firstAttribute="top" secondItem="Xx9-Hf-b2C" secondAttribute="bottom" constant="5" id="5SB-zZ-iKv"/>
                             <constraint firstItem="zlC-Uh-5l2" firstAttribute="trailing" secondItem="I6n-oL-cCP" secondAttribute="trailing" constant="5" id="Ecx-fI-Pxy"/>
@@ -138,7 +141,6 @@
                             <constraint firstItem="zlC-Uh-5l2" firstAttribute="trailing" secondItem="Xx9-Hf-b2C" secondAttribute="trailing" id="sPu-iS-7GV"/>
                             <constraint firstItem="I6n-oL-cCP" firstAttribute="leading" secondItem="zlC-Uh-5l2" secondAttribute="leading" constant="5" id="y1v-5D-xTy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zlC-Uh-5l2"/>
                     </view>
                     <connections>
                         <outlet property="priceLabel" destination="I6n-oL-cCP" id="VGM-H7-BDZ"/>
@@ -153,7 +155,7 @@
         <!--Home-->
         <scene sceneID="VZW-PI-u5d">
             <objects>
-                <viewController id="Wts-pr-hIX" customClass="HomeViewController" customModule="RAD_Advertiser_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wts-pr-hIX" customClass="HomeViewController" customModule="Adv_Main_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ye-Y2-BdB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +170,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="us8-U3-M1G" customClass="ProductCell" customModule="RAD_Advertiser_Demo" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="us8-U3-M1G" customClass="ProductCell" customModule="Adv_Main_Demo" customModuleProvider="target">
                                         <rect key="frame" x="98.5" y="0.0" width="217" height="217"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CXU-CG-Nfk">
@@ -231,14 +233,14 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ehE-f6-TWi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ehE-f6-TWi" firstAttribute="bottom" secondItem="t8P-VT-jh3" secondAttribute="bottom" id="5C1-yr-7we"/>
                             <constraint firstItem="ehE-f6-TWi" firstAttribute="trailing" secondItem="t8P-VT-jh3" secondAttribute="trailing" id="9ap-I5-QBq"/>
                             <constraint firstItem="t8P-VT-jh3" firstAttribute="leading" secondItem="ehE-f6-TWi" secondAttribute="leading" id="ARk-6f-u3e"/>
                             <constraint firstItem="t8P-VT-jh3" firstAttribute="top" secondItem="ehE-f6-TWi" secondAttribute="top" id="Q4F-s4-9Qr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ehE-f6-TWi"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="GyE-5Q-vUI"/>
                     <connections>
@@ -310,13 +312,13 @@
         <!--Account-->
         <scene sceneID="wev-ND-9zf">
             <objects>
-                <viewController id="OvN-CN-AF6" customClass="AccountViewController" customModule="RAD_Advertiser_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OvN-CN-AF6" customClass="AccountViewController" customModule="Adv_Main_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fql-Jp-b8w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5a-WF-Rb8" customClass="Button" customModule="RAD_Advertiser_Demo" customModuleProvider="target">
-                                <rect key="frame" x="69" y="408.5" width="276" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5a-WF-Rb8" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
+                                <rect key="frame" x="69" y="753" width="276" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Jt3-tY-Jtf"/>
                                 </constraints>
@@ -325,25 +327,96 @@
                                     <action selector="signOutButtonPressed:" destination="OvN-CN-AF6" eventType="touchUpInside" id="m7H-7T-NK9"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="i7t-sQ-x9p">
+                                <rect key="frame" x="10" y="54" width="394" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK base URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yz9-BX-GPR">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="41.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="https://api.rakutenadvertising.io" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eR1-du-TPe">
+                                        <rect key="frame" x="0.0" y="56.5" width="394" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="OvN-CN-AF6" id="3GS-hj-P4Z"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-9c-OPF" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="112.5" width="394" height="41.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Save URL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveURLButtonPressed:" destination="OvN-CN-AF6" eventType="touchUpInside" id="vQE-wf-Q2k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqu-8G-Rf9" userLabel="Reset To Default URL" customClass="Button" customModule="Adv_Main_Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="169" width="394" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Reset To Default URL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetToDefaultURLButtonPressed:" destination="OvN-CN-AF6" eventType="touchUpInside" id="F1K-Ks-SAf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="Bzj-2q-GeW"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vWA-FV-1vN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vWA-FV-1vN" firstAttribute="trailing" secondItem="i7t-sQ-x9p" secondAttribute="trailing" constant="10" id="1Ub-Ka-WQy"/>
+                            <constraint firstItem="i7t-sQ-x9p" firstAttribute="leading" secondItem="vWA-FV-1vN" secondAttribute="leading" constant="10" id="3G9-qf-VWF"/>
                             <constraint firstItem="b5a-WF-Rb8" firstAttribute="width" secondItem="Fql-Jp-b8w" secondAttribute="width" multiplier="2/3" id="7gZ-R1-FRB"/>
-                            <constraint firstItem="b5a-WF-Rb8" firstAttribute="centerY" secondItem="vWA-FV-1vN" secondAttribute="centerY" id="oak-Gc-C2Z"/>
+                            <constraint firstItem="vWA-FV-1vN" firstAttribute="bottom" secondItem="b5a-WF-Rb8" secondAttribute="bottom" constant="20" id="kA6-By-dVK"/>
+                            <constraint firstItem="i7t-sQ-x9p" firstAttribute="top" secondItem="vWA-FV-1vN" secondAttribute="top" constant="10" id="l3U-60-ARo"/>
                             <constraint firstItem="b5a-WF-Rb8" firstAttribute="centerX" secondItem="vWA-FV-1vN" secondAttribute="centerX" id="rpe-JO-u6l"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="vWA-FV-1vN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" selectedImage="person.fill" id="F9J-h8-B8D"/>
+                    <connections>
+                        <outlet property="customBaseURLTextField" destination="eR1-du-TPe" id="71A-wD-Nsp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hO1-3r-7Pq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-115" y="654"/>
+            <point key="canvasLocation" x="-661" y="700"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="0yN-tC-lkQ">
+            <size key="intrinsicContentSize" width="64" height="30"/>
+        </designable>
+        <designable name="4cX-9c-OPF">
+            <size key="intrinsicContentSize" width="78" height="34"/>
+        </designable>
+        <designable name="Kqu-8G-Rf9">
+            <size key="intrinsicContentSize" width="171" height="34"/>
+        </designable>
+        <designable name="b5a-WF-Rb8">
+            <size key="intrinsicContentSize" width="70" height="34"/>
+        </designable>
+        <designable name="jHT-r9-eg2">
+            <size key="intrinsicContentSize" width="82" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="cart_icon" width="25" height="25"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="products_icon" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

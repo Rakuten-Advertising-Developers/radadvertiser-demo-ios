@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RakutenAdvertisingAttribution
 
 struct Environment {
 
@@ -24,5 +25,16 @@ struct Environment {
         #else
         fatalError("Unknow configuration for current target")
         #endif
+    }
+}
+
+extension Environment.App: BackendURLProvider {
+
+    var backendURL: URL {
+
+        guard let url: URL = UserDefaults.standard.url(forKey: UserDafaultKey.customBaseURL) else {
+            return BackendInfo.defaultConfiguration.backendURL
+        }
+        return url
     }
 }
