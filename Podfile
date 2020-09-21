@@ -15,7 +15,7 @@ DEPLOYMENT_TARGET = '13.0'
 
 def required_pods
 
-  pod 'RakutenAdvertisingAttribution', :git => GIT_URL, :branch => GIT_BRANCH
+  pod 'RakutenAdvertisingAttribution' #, :git => GIT_URL, :branch => GIT_BRANCH
 
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'

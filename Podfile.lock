@@ -309,7 +309,7 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
-  - RakutenAdvertisingAttribution (0.0.1):
+  - RakutenAdvertisingAttribution (1.0.0):
     - SwiftJWT
   - SwiftJWT (3.5.3):
     - BlueCryptor (~> 1.0)
@@ -321,7 +321,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
-  - RakutenAdvertisingAttribution (from `https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git`, branch `develop`)
+  - RakutenAdvertisingAttribution
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -347,16 +347,8 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - SwiftJWT
-
-EXTERNAL SOURCES:
-  RakutenAdvertisingAttribution:
-    :branch: develop
-    :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
-
-CHECKOUT OPTIONS:
-  RakutenAdvertisingAttribution:
-    :commit: 19db6817bad1994b0c4bf454820814e6fe862ff2
-    :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
+  https://github.com/Rakuten-Advertising-Developers/Specs.git:
+    - RakutenAdvertisingAttribution
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -380,9 +372,9 @@ SPEC CHECKSUMS:
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
-  RakutenAdvertisingAttribution: d73d2fd3da0d2ff47d92c6435d6ea7c751243a9b
+  RakutenAdvertisingAttribution: df4e815698b21d0190b021d261a9ecbc39814198
   SwiftJWT: 9a47a71090cae25767078756b5810e3b630aa9a7
 
-PODFILE CHECKSUM: 9b4df1c71ec4ce26eb828f285549a0561968407a
+PODFILE CHECKSUM: f55c0b3e94c9206edd92efddd84b58df310e0978
 
 COCOAPODS: 1.9.3
