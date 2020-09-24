@@ -16,7 +16,7 @@ import AdSupport
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var coordinator: AppCoordinator?
+    var coordinator = AppCoordinator()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
 
-        RakutenAdvertisingAttribution.shared.linkResolver.resolveLink(url: url)
+        RakutenAdvertisingAttribution.shared.linkResolver.resolve(url: url)
         return true
     }
 
@@ -49,12 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        let resolved = RakutenAdvertisingAttribution.shared.linkResolver.resolve(userActivity: userActivity)
-        if resolved {
-            print("userActivity available to resolve")
-        } else {
-            print("userActivity unavailable to resolve")
-        }
+
+        RakutenAdvertisingAttribution.shared.linkResolver.resolve(userActivity: userActivity)
         return true
     }
     
@@ -76,11 +72,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        
-        coordinator = AppCoordinator()
-        coordinator?.window = window
-        
-        coordinator?.showFirstVC()
+
+        coordinator.window = window
+        coordinator.showFirstVC()
     }
     
     func setupRakutenAdvertisingAttribution(with launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
@@ -98,8 +92,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if DEBUG
         RakutenAdvertisingAttribution.shared.logger.enabled = true
         #endif
-        RakutenAdvertisingAttribution.shared.linkResolver.delegate = AttributionSDKHandler.shared
-        RakutenAdvertisingAttribution.shared.eventSender.delegate = AttributionSDKHandler.shared
+
+        let deepLinkHandler = DeepLinkDataHandler()
+        deepLinkHandler.navigation = coordinator
+
+        let handler = AttributionSDKHandler.shared
+        handler.deepLinkHandler = deepLinkHandler
+
+        RakutenAdvertisingAttribution.shared.linkResolver.delegate = handler
+        RakutenAdvertisingAttribution.shared.eventSender.delegate = handler
         
         RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = ASIdentifierManager.shared().isAdvertisingTrackingEnabled
         RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = ASIdentifierManager.shared().advertisingIdentifier.uuidString

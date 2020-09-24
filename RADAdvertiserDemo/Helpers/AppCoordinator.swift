@@ -9,9 +9,15 @@
 import Foundation
 import FirebaseAuth
 
+protocol DeepLinkNavigationalable: AnyObject {
+
+    func showDetails(offerID: String)
+}
+
 class AppCoordinator {
     
     var window: UIWindow?
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
     private var signInVC: SignInViewController {
         let signInVC = SignInViewController()
@@ -20,8 +26,7 @@ class AppCoordinator {
     }
     
     private var mainVC: UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
+
         let mainVC = storyboard.instantiateInitialViewController()!
         
         if let tabBar = mainVC as? UITabBarController,
@@ -64,5 +69,17 @@ extension AppCoordinator: SignOutDelegate {
     func didSignOutComplete() {
         
         showSignIn()
+    }
+}
+
+extension AppCoordinator: DeepLinkNavigationalable {
+
+    func showDetails(offerID: String) {
+
+        let vc = storyboard.instantiateViewController(identifier: "OfferDetailsViewController") as! OfferDetailsViewController
+        vc.offerID = offerID
+
+        let navController = UINavigationController(rootViewController: vc)
+        window?.rootViewController?.present(navController, animated: true)
     }
 }

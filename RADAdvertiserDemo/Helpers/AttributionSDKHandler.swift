@@ -13,6 +13,8 @@ import UserNotifications
 class AttributionSDKHandler: NSObject {
     
     static let shared = AttributionSDKHandler()
+
+    var deepLinkHandler: DeepLinkDataHandler?
     
     private let notificationCenter: UNUserNotificationCenter = .current()
     
@@ -61,6 +63,8 @@ extension AttributionSDKHandler: LinkResolvableDelegate {
         showNotification(title: "Resolve link ✅",
                          subTitle: response.sessionId,
                          body: response.asJSON() ?? "")
+
+        deepLinkHandler?.handleDeepLink(data: response.data)
     }
     
     func didFailedResolve(link: String, with error: Error) {

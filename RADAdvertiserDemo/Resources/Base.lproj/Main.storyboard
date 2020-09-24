@@ -81,6 +81,44 @@
             </objects>
             <point key="canvasLocation" x="781.15942028985512" y="-86.383928571428569"/>
         </scene>
+        <!--Offer Details View Controller-->
+        <scene sceneID="isp-9G-uct">
+            <objects>
+                <viewController storyboardIdentifier="OfferDetailsViewController" id="l1m-8p-rxG" customClass="OfferDetailsViewController" customModule="Adv_Main_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BX7-XQ-b2j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcL-Gc-hZS">
+                                <rect key="frame" x="177.5" y="104" width="59.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txZ-BC-6l3">
+                                <rect key="frame" x="173.5" y="436" width="67" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IfT-3I-QHt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TcL-Gc-hZS" firstAttribute="top" secondItem="IfT-3I-QHt" secondAttribute="top" constant="60" id="8N0-bn-dJI"/>
+                            <constraint firstItem="TcL-Gc-hZS" firstAttribute="centerX" secondItem="IfT-3I-QHt" secondAttribute="centerX" id="TNb-gs-Qcc"/>
+                            <constraint firstItem="txZ-BC-6l3" firstAttribute="centerX" secondItem="IfT-3I-QHt" secondAttribute="centerX" id="oSG-7w-7vI"/>
+                            <constraint firstItem="txZ-BC-6l3" firstAttribute="centerY" secondItem="IfT-3I-QHt" secondAttribute="centerY" id="sJt-Wo-W8w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="offerNumberLabel" destination="txZ-BC-6l3" id="738-EN-yZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7t-EW-gPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1841" y="265"/>
+        </scene>
         <!--Product Details View Controller-->
         <scene sceneID="h7g-FN-6hW">
             <objects>
