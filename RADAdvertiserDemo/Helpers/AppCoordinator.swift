@@ -80,6 +80,11 @@ extension AppCoordinator: DeepLinkNavigationalable {
         vc.offerID = offerID
 
         let navController = UINavigationController(rootViewController: vc)
-        window?.rootViewController?.present(navController, animated: true)
+
+        var targetVC = window?.rootViewController
+        while targetVC?.presentedViewController != nil {
+            targetVC = targetVC?.presentedViewController
+        }
+        targetVC?.present(navController, animated: true)
     }
 }
