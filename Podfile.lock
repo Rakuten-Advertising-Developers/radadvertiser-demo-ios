@@ -309,7 +309,7 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.11)
-  - RakutenAdvertisingAttribution (1.0.0):
+  - RakutenAdvertisingAttribution (1.0.1):
     - SwiftJWT
   - SwiftJWT (3.5.3):
     - BlueCryptor (~> 1.0)
@@ -372,7 +372,7 @@ SPEC CHECKSUMS:
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
-  RakutenAdvertisingAttribution: df4e815698b21d0190b021d261a9ecbc39814198
+  RakutenAdvertisingAttribution: ed8bbec3c64f697ecd37bfb98a3a07dcf98a9789
   SwiftJWT: 9a47a71090cae25767078756b5810e3b630aa9a7
 
 PODFILE CHECKSUM: 226fbe147f2a8f774434f89b6e5da3ea8583a6bc

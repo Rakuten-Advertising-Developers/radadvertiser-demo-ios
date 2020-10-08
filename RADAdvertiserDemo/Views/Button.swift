@@ -13,13 +13,16 @@ class Button: UIButton {
 
     var app: Environment.App = Environment.app
 
-    var mainColor: UIColor {
-        switch app {
-        case .main:
-            return .systemBlue
-        case .second:
-            return .magenta
-        }
+    var mainColor: UIColor = .systemBlue
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        mainColor = currentColor
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        mainColor = currentColor
     }
     
     override func draw(_ rect: CGRect) {
@@ -28,5 +31,14 @@ class Button: UIButton {
         let path = UIBezierPath(roundedRect: rect, cornerRadius: 5)
         mainColor.setFill()
         path.fill()
+    }
+
+    var currentColor: UIColor {
+        switch app {
+        case .main:
+            return .systemBlue
+        case .second:
+            return .magenta
+        }
     }
 }
