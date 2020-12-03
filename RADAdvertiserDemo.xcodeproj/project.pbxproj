@@ -25,6 +25,8 @@
 		57436CF0243785840010B7E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEE243785840010B7E9 /* LaunchScreen.storyboard */; };
 		574DA22B24CF1B8A00B8F09E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */; };
 		574DA22C24CF1B8E00B8F09E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */; };
+		576E8C6325792157008D4DF8 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E8C6225792157008D4DF8 /* WebViewViewController.swift */; };
+		576E8C6425792157008D4DF8 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E8C6225792157008D4DF8 /* WebViewViewController.swift */; };
 		57752F7F245AE86A0022F8B9 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F7E245AE86A0022F8B9 /* SecretConstants.swift */; };
 		57752F81245AF2910022F8B9 /* AttributionSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */; };
 		578BFAC2251CC1F500C6661E /* OfferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BFAC1251CC1F500C6661E /* OfferDetailsViewController.swift */; };
@@ -98,6 +100,7 @@
 		57436CF724378D5F0010B7E9 /* AppEntitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppEntitlements.entitlements; sourceTree = "<group>"; };
 		574DA22824CF1B8600B8F09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		576E8C6225792157008D4DF8 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		57752F7E245AE86A0022F8B9 /* SecretConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretConstants.swift; sourceTree = "<group>"; };
 		57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionSDKHandler.swift; sourceTree = "<group>"; };
 		578BFAC1251CC1F500C6661E /* OfferDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailsViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +196,7 @@
 				571DA3782444935A00B44EE8 /* ProductDetailsViewController.swift */,
 				578BFAC1251CC1F500C6661E /* OfferDetailsViewController.swift */,
 				571DA36E244485BF00B44EE8 /* CartViewController.swift */,
+				576E8C6225792157008D4DF8 /* WebViewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -494,6 +498,7 @@
 				578F75B32514C9D400E5FB0E /* OrderItem.swift in Sources */,
 				571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */,
 				57C0DE2D2551A3EA009FC9BE /* IDFAFetcher.swift in Sources */,
+				576E8C6325792157008D4DF8 /* WebViewViewController.swift in Sources */,
 				571DA364244477B600B44EE8 /* DataProvider.swift in Sources */,
 				578BFAC9251CC84B00C6661E /* DeepLinkDataHandler.swift in Sources */,
 				57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */,
@@ -526,6 +531,7 @@
 				578F75B42514C9D400E5FB0E /* OrderItem.swift in Sources */,
 				57CF559024CF04440006E105 /* Collection+Extensions.swift in Sources */,
 				57C0DE2E2551A3EA009FC9BE /* IDFAFetcher.swift in Sources */,
+				576E8C6425792157008D4DF8 /* WebViewViewController.swift in Sources */,
 				57CF559124CF04440006E105 /* DataProvider.swift in Sources */,
 				578BFACA251CC84B00C6661E /* DeepLinkDataHandler.swift in Sources */,
 				57CF559224CF04440006E105 /* UIViewController+Extensions.swift in Sources */,
@@ -692,7 +698,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -726,7 +732,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -760,7 +766,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -794,7 +800,7 @@
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Second/AppEntitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEVELOPMENT_TEAM = Y7X3534ZWR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
