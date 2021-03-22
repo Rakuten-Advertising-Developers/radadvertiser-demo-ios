@@ -37,8 +37,6 @@
 		578F753D2514AF4100E5FB0E /* UserDafaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */; };
 		578F75B32514C9D400E5FB0E /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F75B22514C9D400E5FB0E /* OrderItem.swift */; };
 		578F75B42514C9D400E5FB0E /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F75B22514C9D400E5FB0E /* OrderItem.swift */; };
-		57C0DE2D2551A3EA009FC9BE /* IDFAFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0DE2C2551A3EA009FC9BE /* IDFAFetcher.swift */; };
-		57C0DE2E2551A3EA009FC9BE /* IDFAFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C0DE2C2551A3EA009FC9BE /* IDFAFetcher.swift */; };
 		57CF558C24CF04440006E105 /* ProductCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37224448AA600B44EE8 /* ProductCollectionViewLayout.swift */; };
 		57CF558D24CF04440006E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37624448C6400B44EE8 /* ProductCell.swift */; };
 		57CF558E24CF04440006E105 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
@@ -107,7 +105,6 @@
 		578BFAC8251CC84B00C6661E /* DeepLinkDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkDataHandler.swift; sourceTree = "<group>"; };
 		578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDafaultKey.swift; sourceTree = "<group>"; };
 		578F75B22514C9D400E5FB0E /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
-		57C0DE2C2551A3EA009FC9BE /* IDFAFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDFAFetcher.swift; sourceTree = "<group>"; };
 		57CF55AB24CF04440006E105 /* Adv Second Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adv Second Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CF55AD24CF09740006E105 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CF55B024CF09A40006E105 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -222,7 +219,6 @@
 				578BFAC8251CC84B00C6661E /* DeepLinkDataHandler.swift */,
 				57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */,
 				578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */,
-				57C0DE2C2551A3EA009FC9BE /* IDFAFetcher.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -497,7 +493,6 @@
 				571DA3792444935A00B44EE8 /* ProductDetailsViewController.swift in Sources */,
 				578F75B32514C9D400E5FB0E /* OrderItem.swift in Sources */,
 				571DA3622444739800B44EE8 /* Collection+Extensions.swift in Sources */,
-				57C0DE2D2551A3EA009FC9BE /* IDFAFetcher.swift in Sources */,
 				576E8C6325792157008D4DF8 /* WebViewViewController.swift in Sources */,
 				571DA364244477B600B44EE8 /* DataProvider.swift in Sources */,
 				578BFAC9251CC84B00C6661E /* DeepLinkDataHandler.swift in Sources */,
@@ -530,7 +525,6 @@
 				57CF558F24CF04440006E105 /* ProductDetailsViewController.swift in Sources */,
 				578F75B42514C9D400E5FB0E /* OrderItem.swift in Sources */,
 				57CF559024CF04440006E105 /* Collection+Extensions.swift in Sources */,
-				57C0DE2E2551A3EA009FC9BE /* IDFAFetcher.swift in Sources */,
 				576E8C6425792157008D4DF8 /* WebViewViewController.swift in Sources */,
 				57CF559124CF04440006E105 /* DataProvider.swift in Sources */,
 				578BFACA251CC84B00C6661E /* DeepLinkDataHandler.swift in Sources */,

@@ -10,12 +10,12 @@ source 'https://github.com/Rakuten-Advertising-Developers/Specs.git'
 use_frameworks!
 
 GIT_URL = 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git'
-GIT_BRANCH = 'develop'
+GIT_BRANCH = 'feature/RAN-17493_Duplicate_install_events_and_multiple_attribution_results'
 DEPLOYMENT_TARGET = '13.0'
 
 def required_pods
 
-  pod 'RakutenAdvertisingAttribution'#, :git => GIT_URL, :branch => GIT_BRANCH
+  pod 'RakutenAdvertisingAttribution', :git => GIT_URL, :branch => GIT_BRANCH
 
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'

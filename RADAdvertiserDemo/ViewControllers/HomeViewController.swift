@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RakutenAdvertisingAttribution
 
 class HomeViewController: UIViewController {
     
@@ -24,6 +25,27 @@ class HomeViewController: UIViewController {
         productsCollectionView.refreshControl = refreshControl
         
         loadData()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Request Tracking",
+                                                            style: .done,
+                                                            target: self, action: #selector(requestTracking))
+    }
+    
+    @objc func requestTracking() {
+        
+        #if targetEnvironment(simulator)
+    
+        RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = true
+        RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = "some_test_identifier"
+        
+        #else
+        
+        IDFAFetcher.requestTracking {
+            RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = $0
+            RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = $1.uuidString
+        }
+        
+        #endif
     }
     
     @objc func loadData() {

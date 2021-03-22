@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var coordinator = AppCoordinator()
+    var attributionSDKHandler: AttributionSDKHandler?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -89,21 +90,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                           backendURLProvider: useStageEnvironment ? BackendInfo.stageConfiguration : BackendInfo.defaultConfiguration)
 
         RakutenAdvertisingAttribution.setup(with: configuration)
-        
-        #if DEBUG
         RakutenAdvertisingAttribution.shared.logger.enabled = true
-        #endif
-
+        
         let deepLinkHandler = DeepLinkDataHandler()
         deepLinkHandler.navigation = coordinator
 
-        let handler = AttributionSDKHandler.shared
-        handler.deepLinkHandler = deepLinkHandler
+        attributionSDKHandler = AttributionSDKHandler()
+        attributionSDKHandler?.deepLinkHandler = deepLinkHandler
 
-        RakutenAdvertisingAttribution.shared.linkResolver.delegate = handler
-        RakutenAdvertisingAttribution.shared.eventSender.delegate = handler
-
-        IDFAFetcher.startFetching {
+        RakutenAdvertisingAttribution.shared.linkResolver.delegate = attributionSDKHandler
+        RakutenAdvertisingAttribution.shared.eventSender.delegate = attributionSDKHandler
+        
+        IDFAFetcher.fetchIfAuthorized {
             RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = $0
             RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = $1.uuidString
         }

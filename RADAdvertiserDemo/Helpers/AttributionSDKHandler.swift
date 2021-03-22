@@ -11,14 +11,13 @@ import RakutenAdvertisingAttribution
 import UserNotifications
 
 class AttributionSDKHandler: NSObject {
-    
-    static let shared = AttributionSDKHandler()
 
     var deepLinkHandler: DeepLinkDataHandler?
     
     private let notificationCenter: UNUserNotificationCenter = .current()
     
-    private override init() {
+    override init() {
+    
         super.init()
         self.notificationCenter.delegate = self
     }
