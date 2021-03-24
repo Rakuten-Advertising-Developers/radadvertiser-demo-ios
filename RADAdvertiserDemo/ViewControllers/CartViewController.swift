@@ -65,7 +65,7 @@ class CartViewController: UIViewController {
 
     @IBAction func purchaseViaWebButtonPressed(_ sender: Any) {
 
-        let vc = storyboard?.instantiateViewController(identifier: "WebViewViewController") as! WebViewViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
         vc.orderModifier = orderModifier
         
         present(UINavigationController(rootViewController: vc), animated: true)

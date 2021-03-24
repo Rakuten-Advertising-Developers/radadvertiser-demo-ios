@@ -11,7 +11,7 @@ use_frameworks!
 
 GIT_URL = 'https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git'
 GIT_BRANCH = 'feature/RAN-17493_Duplicate_install_events_and_multiple_attribution_results'
-DEPLOYMENT_TARGET = '13.0'
+DEPLOYMENT_TARGET = '11.0'
 
 def required_pods
 

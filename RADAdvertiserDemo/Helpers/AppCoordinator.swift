@@ -76,7 +76,7 @@ extension AppCoordinator: DeepLinkNavigationalable {
 
     func showDetails(offerID: String) {
 
-        let vc = storyboard.instantiateViewController(identifier: "OfferDetailsViewController") as! OfferDetailsViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "OfferDetailsViewController") as! OfferDetailsViewController
         vc.offerID = offerID
 
         let navController = UINavigationController(rootViewController: vc)

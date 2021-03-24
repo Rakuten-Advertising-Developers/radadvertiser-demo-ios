@@ -34,10 +34,10 @@ class HomeViewController: UIViewController {
     @objc func requestTracking() {
         
         #if targetEnvironment(simulator)
-    
+
         RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = true
         RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = "some_test_identifier"
-        
+
         #else
         
         IDFAFetcher.requestTracking {
@@ -100,7 +100,7 @@ extension HomeViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let vc = storyboard?.instantiateViewController(identifier: "ProductDetailsViewController") as! ProductDetailsViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
         vc.product = products[indexPath.row]
         
         present(UINavigationController(rootViewController: vc), animated: true)
