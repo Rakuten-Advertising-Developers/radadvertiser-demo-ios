@@ -101,9 +101,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         RakutenAdvertisingAttribution.shared.linkResolver.delegate = attributionSDKHandler
         RakutenAdvertisingAttribution.shared.eventSender.delegate = attributionSDKHandler
         
-        IDFAFetcher.fetchIfAuthorized {
-            RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = $0
-            RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = $1.uuidString
-        }
+        RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = true
+        RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = "test_idfa"
+        
+//        IDFAFetcher.fetchIfAuthorized {
+//            RakutenAdvertisingAttribution.shared.adSupport.isTrackingEnabled = $0
+//            RakutenAdvertisingAttribution.shared.adSupport.advertisingIdentifier = $1.uuidString
+//        }
     }
 }

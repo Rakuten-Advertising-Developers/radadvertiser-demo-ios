@@ -255,7 +255,7 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 2.30907.0)
-  - GoogleDataTransport (8.3.0):
+  - GoogleDataTransport (8.3.1):
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30907.0)
     - PromisesObjC (~> 1.2)
@@ -323,7 +323,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
-  - RakutenAdvertisingAttribution (from `https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git`, branch `feature/RAN-17493_Duplicate_install_events_and_multiple_attribution_results`)
+  - RakutenAdvertisingAttribution (from `https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git`, branch `develop`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -352,12 +352,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   RakutenAdvertisingAttribution:
-    :branch: feature/RAN-17493_Duplicate_install_events_and_multiple_attribution_results
+    :branch: develop
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 CHECKOUT OPTIONS:
   RakutenAdvertisingAttribution:
-    :commit: 3605d3a838d67bc0b2cc7c6b9758c8158c99dff4
+    :commit: 8de1445bf99fadc19c5e97925fa4ca627b16fd45
     :git: https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK.git
 
 SPEC CHECKSUMS:
@@ -371,7 +371,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 0798738ad1ae0fda67e17c7b9081241c431c6859
   FirebaseCoreDiagnostics: 3d36e05da74cb8b7ce30e6594a8f201b982c725c
   FirebaseFirestore: a2de10a51530efd84f2309acbe774f498285e93a
-  GoogleDataTransport: b006084b73915a42c28a3466961a4edda3065da6
+  GoogleDataTransport: 8b0e733ea77c9218778e5a9e34ba9508b8328939
   GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
@@ -385,6 +385,6 @@ SPEC CHECKSUMS:
   RakutenAdvertisingAttribution: 2f47ca7e52d716203d602fdb77e19df319753452
   SwiftJWT: 88c412708f58c169d431d344c87bc79a87c830ae
 
-PODFILE CHECKSUM: 55873f69dbd226dfdb0dd9bf2b18bb1d63895280
+PODFILE CHECKSUM: 01c3ae581ef999b171ca30bfb42f399a0baa0e5e
 
 COCOAPODS: 1.10.1
