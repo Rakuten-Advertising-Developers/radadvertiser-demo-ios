@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,38 @@
 		578F753D2514AF4100E5FB0E /* UserDafaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */; };
 		578F75B32514C9D400E5FB0E /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F75B22514C9D400E5FB0E /* OrderItem.swift */; };
 		578F75B42514C9D400E5FB0E /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F75B22514C9D400E5FB0E /* OrderItem.swift */; };
+		57ADABEA261497B4007F08A9 /* ProductCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37224448AA600B44EE8 /* ProductCollectionViewLayout.swift */; };
+		57ADABEB261497B4007F08A9 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37624448C6400B44EE8 /* ProductCell.swift */; };
+		57ADABEC261497B4007F08A9 /* UserDafaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */; };
+		57ADABED261497B4007F08A9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
+		57ADABEE261497B4007F08A9 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3782444935A00B44EE8 /* ProductDetailsViewController.swift */; };
+		57ADABEF261497B4007F08A9 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578F75B22514C9D400E5FB0E /* OrderItem.swift */; };
+		57ADABF0261497B4007F08A9 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3612444739800B44EE8 /* Collection+Extensions.swift */; };
+		57ADABF1261497B4007F08A9 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E8C6225792157008D4DF8 /* WebViewViewController.swift */; };
+		57ADABF2261497B4007F08A9 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA363244477B600B44EE8 /* DataProvider.swift */; };
+		57ADABF3261497B4007F08A9 /* DeepLinkDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BFAC8251CC84B00C6661E /* DeepLinkDataHandler.swift */; };
+		57ADABF4261497B4007F08A9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */; };
+		57ADABF5261497B4007F08A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57436CE3243785820010B7E9 /* AppDelegate.swift */; };
+		57ADABF6261497B4007F08A9 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37A244497A100B44EE8 /* UIImageView+Extensions.swift */; };
+		57ADABF7261497B4007F08A9 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CF55B024CF09A40006E105 /* Environment.swift */; };
+		57ADABF8261497B4007F08A9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */; };
+		57ADABF9261497B4007F08A9 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37F2444A4B100B44EE8 /* Button.swift */; };
+		57ADABFA261497B4007F08A9 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36E244485BF00B44EE8 /* CartViewController.swift */; };
+		57ADABFB261497B4007F08A9 /* SecretConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F7E245AE86A0022F8B9 /* SecretConstants.swift */; };
+		57ADABFC261497B4007F08A9 /* AttributionSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57752F80245AF2910022F8B9 /* AttributionSDKHandler.swift */; };
+		57ADABFD261497B4007F08A9 /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37C2444985D00B44EE8 /* NumberFormatter+Extensions.swift */; };
+		57ADABFE261497B4007F08A9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAA246AB2070060B0C9 /* SignInViewController.swift */; };
+		57ADABFF261497B4007F08A9 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA3702444862500B44EE8 /* OrderManager.swift */; };
+		57ADAC00261497B4007F08A9 /* OfferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BFAC1251CC1F500C6661E /* OfferDetailsViewController.swift */; };
+		57ADAC01261497B4007F08A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36C2444839400B44EE8 /* HomeViewController.swift */; };
+		57ADAC02261497B4007F08A9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA35F244472BE00B44EE8 /* Product.swift */; };
+		57ADAC04261497B4007F08A9 /* Pods_Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */; };
+		57ADAC06261497B4007F08A9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */; };
+		57ADAC07261497B4007F08A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEE243785840010B7E9 /* LaunchScreen.storyboard */; };
+		57ADAC08261497B4007F08A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */; };
+		57ADAC09261497B4007F08A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEC243785840010B7E9 /* Assets.xcassets */; };
+		57ADAC0A261497B4007F08A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
+		57ADAC16261498B2007F08A9 /* RakutenAdvertisingAttribution in Frameworks */ = {isa = PBXBuildFile; productRef = 57ADAC15261498B2007F08A9 /* RakutenAdvertisingAttribution */; };
 		57CF558C24CF04440006E105 /* ProductCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37224448AA600B44EE8 /* ProductCollectionViewLayout.swift */; };
 		57CF558D24CF04440006E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37624448C6400B44EE8 /* ProductCell.swift */; };
 		57CF558E24CF04440006E105 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
@@ -105,6 +137,8 @@
 		578BFAC8251CC84B00C6661E /* DeepLinkDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkDataHandler.swift; sourceTree = "<group>"; };
 		578F753B2514AF4100E5FB0E /* UserDafaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDafaultKey.swift; sourceTree = "<group>"; };
 		578F75B22514C9D400E5FB0E /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		57ADAC0F261497B4007F08A9 /* Main_SPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main_SPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ADAC1A2614A3F1007F08A9 /* Main_SPM.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Main_SPM.plist; sourceTree = "<group>"; };
 		57CF55AB24CF04440006E105 /* Adv Second Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adv Second Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CF55AD24CF09740006E105 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CF55B024CF09A40006E105 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -127,6 +161,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E853D41822E8494112EC91 /* Pods_Main.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADAC03261497B4007F08A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ADAC16261498B2007F08A9 /* RakutenAdvertisingAttribution in Frameworks */,
+				57ADAC04261497B4007F08A9 /* Pods_Main.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +224,7 @@
 				574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */,
 				57436CF724378D5F0010B7E9 /* AppEntitlements.entitlements */,
 				57436CF1243785840010B7E9 /* Info.plist */,
+				57ADAC1A2614A3F1007F08A9 /* Main_SPM.plist */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -269,6 +313,7 @@
 			children = (
 				57436CE0243785820010B7E9 /* Adv Main Demo.app */,
 				57CF55AB24CF04440006E105 /* Adv Second Demo.app */,
+				57ADAC0F261497B4007F08A9 /* Main_SPM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +365,28 @@
 			productReference = 57436CE0243785820010B7E9 /* Adv Main Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		57ADABE7261497B4007F08A9 /* Main_SPM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57ADAC0C261497B4007F08A9 /* Build configuration list for PBXNativeTarget "Main_SPM" */;
+			buildPhases = (
+				57ADABE8261497B4007F08A9 /* [CP] Check Pods Manifest.lock */,
+				57ADABE9261497B4007F08A9 /* Sources */,
+				57ADAC03261497B4007F08A9 /* Frameworks */,
+				57ADAC05261497B4007F08A9 /* Resources */,
+				57ADAC0B261497B4007F08A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Main_SPM;
+			packageProductDependencies = (
+				57ADAC15261498B2007F08A9 /* RakutenAdvertisingAttribution */,
+			);
+			productName = RADAdvertiserDemo;
+			productReference = 57ADAC0F261497B4007F08A9 /* Main_SPM.app */;
+			productType = "com.apple.product-type.application";
+		};
 		57CF558924CF04440006E105 /* Second */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "Second" */;
@@ -363,12 +430,16 @@
 				Base,
 			);
 			mainGroup = 57436CD7243785820010B7E9;
+			packageReferences = (
+				57ADAC14261498B2007F08A9 /* XCRemoteSwiftPackageReference "RakutenAdvertisingAttribution-iOS-SDK" */,
+			);
 			productRefGroup = 57436CE1243785820010B7E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				57436CDF243785820010B7E9 /* Main */,
 				57CF558924CF04440006E105 /* Second */,
+				57ADABE7261497B4007F08A9 /* Main_SPM */,
 			);
 		};
 /* End PBXProject section */
@@ -383,6 +454,18 @@
 				574DA22C24CF1B8E00B8F09E /* GoogleService-Info.plist in Resources */,
 				57436CED243785840010B7E9 /* Assets.xcassets in Resources */,
 				57436CEB243785820010B7E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADAC05261497B4007F08A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ADAC06261497B4007F08A9 /* SignInViewController.xib in Resources */,
+				57ADAC07261497B4007F08A9 /* LaunchScreen.storyboard in Resources */,
+				57ADAC08261497B4007F08A9 /* GoogleService-Info.plist in Resources */,
+				57ADAC09261497B4007F08A9 /* Assets.xcassets in Resources */,
+				57ADAC0A261497B4007F08A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +484,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		57ADABE8261497B4007F08A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Main-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57ADAC0B261497B4007F08A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		57CF558A24CF04440006E105 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +633,38 @@
 				578BFAC2251CC1F500C6661E /* OfferDetailsViewController.swift in Sources */,
 				571DA36D2444839400B44EE8 /* HomeViewController.swift in Sources */,
 				571DA360244472BE00B44EE8 /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADABE9261497B4007F08A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ADABEA261497B4007F08A9 /* ProductCollectionViewLayout.swift in Sources */,
+				57ADABEB261497B4007F08A9 /* ProductCell.swift in Sources */,
+				57ADABEC261497B4007F08A9 /* UserDafaultKey.swift in Sources */,
+				57ADABED261497B4007F08A9 /* AppCoordinator.swift in Sources */,
+				57ADABEE261497B4007F08A9 /* ProductDetailsViewController.swift in Sources */,
+				57ADABEF261497B4007F08A9 /* OrderItem.swift in Sources */,
+				57ADABF0261497B4007F08A9 /* Collection+Extensions.swift in Sources */,
+				57ADABF1261497B4007F08A9 /* WebViewViewController.swift in Sources */,
+				57ADABF2261497B4007F08A9 /* DataProvider.swift in Sources */,
+				57ADABF3261497B4007F08A9 /* DeepLinkDataHandler.swift in Sources */,
+				57ADABF4261497B4007F08A9 /* UIViewController+Extensions.swift in Sources */,
+				57ADABF5261497B4007F08A9 /* AppDelegate.swift in Sources */,
+				57ADABF6261497B4007F08A9 /* UIImageView+Extensions.swift in Sources */,
+				57ADABF7261497B4007F08A9 /* Environment.swift in Sources */,
+				57ADABF8261497B4007F08A9 /* AccountViewController.swift in Sources */,
+				57ADABF9261497B4007F08A9 /* Button.swift in Sources */,
+				57ADABFA261497B4007F08A9 /* CartViewController.swift in Sources */,
+				57ADABFB261497B4007F08A9 /* SecretConstants.swift in Sources */,
+				57ADABFC261497B4007F08A9 /* AttributionSDKHandler.swift in Sources */,
+				57ADABFD261497B4007F08A9 /* NumberFormatter+Extensions.swift in Sources */,
+				57ADABFE261497B4007F08A9 /* SignInViewController.swift in Sources */,
+				57ADABFF261497B4007F08A9 /* OrderManager.swift in Sources */,
+				57ADAC00261497B4007F08A9 /* OfferDetailsViewController.swift in Sources */,
+				57ADAC01261497B4007F08A9 /* HomeViewController.swift in Sources */,
+				57ADAC02261497B4007F08A9 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +906,74 @@
 			};
 			name = Release;
 		};
+		57ADAC0D261497B4007F08A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 55;
+				DEVELOPMENT_TEAM = Y7X3534ZWR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Main/Main_SPM.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MAIN_APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo DEV PP";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		57ADAC0E261497B4007F08A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 55;
+				DEVELOPMENT_TEAM = Y7X3534ZWR;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"PB_FIELD_32BIT=1",
+					"PB_NO_PACKED_STRUCTS=1",
+					"PB_ENABLE_MALLOC=1",
+				);
+				INFOPLIST_FILE = RADAdvertiserDemo/Resources/Main/Main_SPM.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D MAIN_APP";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakutenadvertising.RADAdvertiserDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "RADAdvertiserDemo Production PP";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		57CF55A924CF04440006E105 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6EFF3125881B602C975FD36 /* Pods-Second.debug.xcconfig */;
@@ -841,6 +1063,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		57ADAC0C261497B4007F08A9 /* Build configuration list for PBXNativeTarget "Main_SPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ADAC0D261497B4007F08A9 /* Debug */,
+				57ADAC0E261497B4007F08A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		57CF55A824CF04440006E105 /* Build configuration list for PBXNativeTarget "Second" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -851,6 +1082,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57ADAC14261498B2007F08A9 /* XCRemoteSwiftPackageReference "RakutenAdvertisingAttribution-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57ADAC15261498B2007F08A9 /* RakutenAdvertisingAttribution */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57ADAC14261498B2007F08A9 /* XCRemoteSwiftPackageReference "RakutenAdvertisingAttribution-iOS-SDK" */;
+			productName = RakutenAdvertisingAttribution;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57436CD8243785820010B7E9 /* Project object */;
 }
