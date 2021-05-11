@@ -62,13 +62,12 @@
 		57ADAC00261497B4007F08A9 /* OfferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BFAC1251CC1F500C6661E /* OfferDetailsViewController.swift */; };
 		57ADAC01261497B4007F08A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA36C2444839400B44EE8 /* HomeViewController.swift */; };
 		57ADAC02261497B4007F08A9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA35F244472BE00B44EE8 /* Product.swift */; };
-		57ADAC04261497B4007F08A9 /* Pods_Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */; };
 		57ADAC06261497B4007F08A9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57FBFFAC246AB2240060B0C9 /* SignInViewController.xib */; };
 		57ADAC07261497B4007F08A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEE243785840010B7E9 /* LaunchScreen.storyboard */; };
 		57ADAC08261497B4007F08A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574DA22A24CF1B8600B8F09E /* GoogleService-Info.plist */; };
 		57ADAC09261497B4007F08A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57436CEC243785840010B7E9 /* Assets.xcassets */; };
 		57ADAC0A261497B4007F08A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57436CE9243785820010B7E9 /* Main.storyboard */; };
-		57ADAC16261498B2007F08A9 /* RakutenAdvertisingAttribution in Frameworks */ = {isa = PBXBuildFile; productRef = 57ADAC15261498B2007F08A9 /* RakutenAdvertisingAttribution */; };
+		57ADAC16261498B2007F08A9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 57ADAC15261498B2007F08A9 /* SwiftPackageProductDependency */; };
 		57CF558C24CF04440006E105 /* ProductCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37224448AA600B44EE8 /* ProductCollectionViewLayout.swift */; };
 		57CF558D24CF04440006E105 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571DA37624448C6400B44EE8 /* ProductCell.swift */; };
 		57CF558E24CF04440006E105 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
@@ -99,6 +98,7 @@
 		57FBFFAF246AB9230060B0C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFAE246AB9230060B0C9 /* AppCoordinator.swift */; };
 		57FBFFB1246ABDC40060B0C9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */; };
 		57FBFFB4246ABEFA0060B0C9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */; };
+		691CC93579C64EE836DBFDF1 /* Pods_Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */; };
 		82E853D41822E8494112EC91 /* Pods_Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */; };
 		875C2DC1DF32FB995684C26C /* Pods_Second.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16422DB22ABA66EC310394D3 /* Pods_Second.framework */; };
 /* End PBXBuildFile section */
@@ -106,7 +106,6 @@
 /* Begin PBXFileReference section */
 		0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.debug.xcconfig"; sourceTree = "<group>"; };
 		16422DB22ABA66EC310394D3 /* Pods_Second.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Second.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Main.release.xcconfig"; path = "Target Support Files/Pods-Main/Pods-Main.release.xcconfig"; sourceTree = "<group>"; };
 		54BFEF3C9EE89A6FCCD6FB76 /* Pods_Main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		570B3E7524D02BF300A2C86B /* AppEntitlements.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = AppEntitlements.entitlements; sourceTree = "<group>"; };
 		571DA35F244472BE00B44EE8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -148,11 +147,12 @@
 		57FBFFB0246ABDC40060B0C9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		57FBFFB3246ABEFA0060B0C9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		61832CDB3255AB49206C3EC5 /* Pods-RADAdvertiserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Main.debug.xcconfig"; path = "Target Support Files/Pods-Main/Pods-Main.debug.xcconfig"; sourceTree = "<group>"; };
 		A8B771A82BC1E5DB4CC3B7F6 /* Pods-Second.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Second.release.xcconfig"; path = "Target Support Files/Pods-Second/Pods-Second.release.xcconfig"; sourceTree = "<group>"; };
 		B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemo.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemo/Pods-RADAdvertiserDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RADAdvertiserDemoSecond.release.xcconfig"; path = "Target Support Files/Pods-RADAdvertiserDemoSecond/Pods-RADAdvertiserDemoSecond.release.xcconfig"; sourceTree = "<group>"; };
 		D6EFF3125881B602C975FD36 /* Pods-Second.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Second.debug.xcconfig"; path = "Target Support Files/Pods-Second/Pods-Second.debug.xcconfig"; sourceTree = "<group>"; };
+		E567B6D42C74A260325C978A /* Pods-Main.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Main.debug.xcconfig"; path = "Target Support Files/Pods-Main/Pods-Main.debug.xcconfig"; sourceTree = "<group>"; };
+		F43DCDD811C7071F8313572E /* Pods-Main.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Main.release.xcconfig"; path = "Target Support Files/Pods-Main/Pods-Main.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E853D41822E8494112EC91 /* Pods_Main.framework in Frameworks */,
+				691CC93579C64EE836DBFDF1 /* Pods_Main.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,8 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57ADAC16261498B2007F08A9 /* RakutenAdvertisingAttribution in Frameworks */,
-				57ADAC04261497B4007F08A9 /* Pods_Main.framework in Frameworks */,
+				57ADAC16261498B2007F08A9 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +191,10 @@
 				B47D4B37D4F9039852491F69 /* Pods-RADAdvertiserDemo.release.xcconfig */,
 				0E9C5A9AE604441C23CBE1AB /* Pods-RADAdvertiserDemoSecond.debug.xcconfig */,
 				BAD9603AB79BA46480A82091 /* Pods-RADAdvertiserDemoSecond.release.xcconfig */,
-				628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */,
-				3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */,
 				D6EFF3125881B602C975FD36 /* Pods-Second.debug.xcconfig */,
 				A8B771A82BC1E5DB4CC3B7F6 /* Pods-Second.release.xcconfig */,
+				E567B6D42C74A260325C978A /* Pods-Main.debug.xcconfig */,
+				F43DCDD811C7071F8313572E /* Pods-Main.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -369,11 +369,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57ADAC0C261497B4007F08A9 /* Build configuration list for PBXNativeTarget "Main_SPM" */;
 			buildPhases = (
-				57ADABE8261497B4007F08A9 /* [CP] Check Pods Manifest.lock */,
 				57ADABE9261497B4007F08A9 /* Sources */,
 				57ADAC03261497B4007F08A9 /* Frameworks */,
 				57ADAC05261497B4007F08A9 /* Resources */,
-				57ADAC0B261497B4007F08A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,7 +379,7 @@
 			);
 			name = Main_SPM;
 			packageProductDependencies = (
-				57ADAC15261498B2007F08A9 /* RakutenAdvertisingAttribution */,
+				57ADAC15261498B2007F08A9 /* SwiftPackageProductDependency */,
 			);
 			productName = RADAdvertiserDemo;
 			productReference = 57ADAC0F261497B4007F08A9 /* Main_SPM.app */;
@@ -431,7 +429,7 @@
 			);
 			mainGroup = 57436CD7243785820010B7E9;
 			packageReferences = (
-				57ADAC14261498B2007F08A9 /* XCRemoteSwiftPackageReference "RakutenAdvertisingAttribution-iOS-SDK" */,
+				57ADAC14261498B2007F08A9 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 57436CE1243785820010B7E9 /* Products */;
 			projectDirPath = "";
@@ -484,45 +482,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		57ADABE8261497B4007F08A9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Main-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57ADAC0B261497B4007F08A9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Main/Pods-Main-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		57CF558A24CF04440006E105 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -840,7 +799,7 @@
 		};
 		57436CF5243785840010B7E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */;
+			baseConfigurationReference = E567B6D42C74A260325C978A /* Pods-Main.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
@@ -874,7 +833,7 @@
 		};
 		57436CF6243785840010B7E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */;
+			baseConfigurationReference = F43DCDD811C7071F8313572E /* Pods-Main.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
@@ -908,7 +867,6 @@
 		};
 		57ADAC0D261497B4007F08A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 628CAC42D4CE434D1EB7FE91 /* Pods-Main.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
@@ -942,7 +900,6 @@
 		};
 		57ADAC0E261497B4007F08A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A8B63CF241C4E590FC54468 /* Pods-Main.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RADAdvertiserDemo/Resources/Main/AppEntitlements.entitlements;
@@ -1084,7 +1041,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		57ADAC14261498B2007F08A9 /* XCRemoteSwiftPackageReference "RakutenAdvertisingAttribution-iOS-SDK" */ = {
+		57ADAC14261498B2007F08A9 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Rakuten-Advertising-Developers/RakutenAdvertisingAttribution-iOS-SDK";
 			requirement = {
@@ -1095,9 +1052,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		57ADAC15261498B2007F08A9 /* RakutenAdvertisingAttribution */ = {
+		57ADAC15261498B2007F08A9 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 57ADAC14261498B2007F08A9 /* XCRemoteSwiftPackageReference "RakutenAdvertisingAttribution-iOS-SDK" */;
+			package = 57ADAC14261498B2007F08A9 /* RemoteSwiftPackageReference */;
 			productName = RakutenAdvertisingAttribution;
 		};
 /* End XCSwiftPackageProductDependency section */
