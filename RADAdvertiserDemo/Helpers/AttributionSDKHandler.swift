@@ -59,7 +59,9 @@ extension AttributionSDKHandler: LinkResolvableDelegate {
     
     func didResolveLink(response: ResolveLinkResponse) {
         
-        showNotification(title: "Resolve link ✅",
+        let resolveType = response.launchType.rawValue
+        
+        showNotification(title: "\(resolveType) Resolve link ✅",
                          subTitle: response.sessionId,
                          body: response.asJSON() ?? "")
 

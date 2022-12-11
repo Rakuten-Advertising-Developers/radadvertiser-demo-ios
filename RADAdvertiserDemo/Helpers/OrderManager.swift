@@ -9,13 +9,13 @@
 import Foundation
 import RakutenAdvertisingAttribution
 
-protocol OrderModifier: class {
+protocol OrderModifier: AnyObject {
     
     func add(product: Product)
     func purchase()
 }
 
-protocol OrderDescriber: class {
+protocol OrderDescriber: AnyObject {
     
     var orderItemsCount: Int { get }
     func orderItem(at index: Int) -> OrderItemRepresentation
