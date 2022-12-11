@@ -64,7 +64,7 @@ class SignInViewController: UIViewController {
         
         sender.isEnabled = false
         let completion: (AuthDataResult?, Error?) -> Void = { [weak self] authResult, error in
-            
+
             sender.isEnabled = true
             guard authResult != nil else {
                 self?.showAlert(error: error)
